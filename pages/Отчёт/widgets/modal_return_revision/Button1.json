@@ -1,0 +1,56 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 33,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "xrck3hf2fs",
+  "leftColumn": 2,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{\n(async () => {\n    try {\n        // Получаем значение из текстового поля (например, comment_input.value)\n        const comment = msg_status_change_text.text || 'Комментарий по умолчанию';\n\n        // Выполняем запрос на возврат отчёта в работу\n        await returned_for_revision.run({\n            comment: comment\n        });\n\n        // Обновляем статус отчёта\n        await getStatus.run();\n\n        // Закрываем модальное окно\n        await closeModal(modal_return_revision.name);\n\n        // Показываем сообщение об успешном изменении статуса\n        await showAlert('Отчёт успешно возвращён в работу', 'success');\n    } catch (error) {\n        console.error(\"Ошибка при возврате отчёта в работу:\", error);\n        await showAlert('Произошла ошибка при возврате отчёта в работу', 'error');\n    }\n})();\n}}",
+  "originalBottomRow": 33,
+  "originalTopRow": 29,
+  "parentId": "rl26l65oxc",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 27,
+  "text": "Вернуть в работу",
+  "topRow": 29,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "6dmgmx8xgj",
+  "widgetName": "Button1"
+}

@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6791298af5b17f4ec0cc8d73_44188a03-6656-4087-9537-ea969345d8b0",
+  "id": "Отчёт_auth_validate",
+  "unpublishedCollection": {
+    "name": "auth_validate",
+    "pageId": "Отчёт",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

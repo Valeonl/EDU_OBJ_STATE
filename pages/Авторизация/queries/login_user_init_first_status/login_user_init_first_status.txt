@@ -1,0 +1,37 @@
+INSERT INTO appsmith.report_status_history (
+	session_id,
+	comment,
+	created_date,
+	directory_inn_id,
+	report_id,
+	status_id
+)
+SELECT
+    {{ this.params.session_id }}, -- ID сессии пользователя (если есть)
+    'Первичная запись статуса',   -- Комментарий
+    CURRENT_TIMESTAMP,           -- Текущая дата и время
+    {{ this.params.ou_id }},     -- Значение FK ИНН, переданное в параметры
+    r.report_id,                 -- ID отчета, полученный через JOIN
+    s.status_id                  -- ID статуса, полученный через JOIN
+FROM
+    appsmith.report r
+JOIN
+    appsmith.status s
+ON
+    r.system_name = '{{ this.params.report_system_name }}' -- Системное имя отчета
+    AND s.system_name = 'in_work_ou' -- Системное имя статуса
+WHERE EXISTS (
+	SELECT 1
+	FROM appsmith.report_status_history rsh
+	JOIN appsmith.status st ON rsh.status_id = st.status_id
+	WHERE
+	rsh.directory_inn_id =  {{ this.params.ou_id }}
+	AND rsh.created_date = (
+		SELECT MAX(created_date)
+		FROM appsmith.report_status_history
+		WHERE directory_inn_id =  {{ this.params.ou_id }}
+	)
+	AND st.system_name = 'never_login'
+	ORDER BY rsh.created_date DESC
+	LIMIT 1
+);

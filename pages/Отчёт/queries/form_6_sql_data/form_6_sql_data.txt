@@ -1,0 +1,10 @@
+SELECT 
+    row_number() OVER (ORDER BY created_date) AS row_num,
+    *,
+		allocated_funds_current_repair_2025 AS "allocated_funds_current_repair_2025_test",
+		allocated_funds_current_repair_2027 AS "allocated_funds_current_repair_2027_test"
+FROM 
+    report_data.edu_object_state_appendix_6
+WHERE 
+    directory_inn_id = {{appsmith.store.user.ou_id}}
+ORDER BY created_date;

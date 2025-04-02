@@ -1,0 +1,4 @@
+DELETE FROM report_data.edu_object_state_appendix_3
+WHERE 
+    directory_inn_id = {{appsmith.store.user.ou_id}}
+    AND row_index = {{table_appendix_3.triggeredRow.row_index}};

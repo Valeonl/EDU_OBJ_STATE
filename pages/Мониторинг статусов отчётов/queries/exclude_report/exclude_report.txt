@@ -1,0 +1,16 @@
+INSERT INTO appsmith.report_status_history (
+	directory_inn_id,
+	status_id,
+	created_date,
+	session_id,
+	comment,
+	report_id
+)
+VALUES (
+	{{ this.params.directory_inn_id }}, -- Значение directory_inn_id, переданное в параметры
+	(SELECT status_id FROM appsmith.status WHERE system_name = 'excluded'), -- ID статуса "исключено из сбора"
+	CURRENT_TIMESTAMP, -- Текущее время и дата
+	{{ appsmith.store.user_session.user_session_id}}, -- Отправитель
+	'Исключён через мониторинг',
+	{{appsmith.store.selected_report.report_id}}
+);

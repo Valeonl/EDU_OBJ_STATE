@@ -1,0 +1,12 @@
+SELECT 
+    *,
+    to_char(created_date + INTERVAL '3 hours', 'DD.MM.YYYY HH24:MI:SS') AS created_date_time,
+    status_print_name AS "Статус"
+FROM 
+    appsmith.report_status_history_mat_view
+WHERE 
+    directory_inn_id = {{ appsmith.store.user.ou_id }}
+    AND report_id = {{ appsmith.store.selected_report.report_id }}
+ORDER BY 
+    created_date DESC
+LIMIT 1;

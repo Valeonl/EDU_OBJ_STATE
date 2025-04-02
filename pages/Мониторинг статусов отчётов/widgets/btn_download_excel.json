@@ -1,0 +1,56 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 99,
+  "boxShadow": "none",
+  "buttonColor": "#b33d0a",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "cloud-download",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ejgruosr50",
+  "leftColumn": 15,
+  "minWidth": 120,
+  "mobileBottomRow": 98,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 94,
+  "needsErrorInfo": false,
+  "onClick": "{{download_report_modal_empty.makeReport();}}",
+  "originalBottomRow": 96,
+  "originalTopRow": 92,
+  "parentColumnSpace": 16.6875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 31,
+  "text": "Скачать отчёт",
+  "topRow": 95,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "ntekk1oi9s",
+  "widgetName": "btn_download_excel"
+}

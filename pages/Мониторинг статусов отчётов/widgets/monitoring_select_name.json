@@ -1,0 +1,78 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "optionLabel"
+    },
+    {
+      "key": "optionValue"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "0hcsavkv3a",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 11,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 88,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 81,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{\n  (() => {\n    const selectedName = monitoring_select_name.selectedOptionValue;\n    const relatedInn = report_status_last.data.find(row => row[\"Наименование учреждения\"] === selectedName)?.[\"ИНН\"] || \"\";\n    monitoring_select_inn.setSelectedOption(relatedInn);\n\n    // Выполняем запросы после установки значения\n    Promise.all([\n      report_status_last.run()\n    ])\n    .then(() => {\n      console.log(\"Запросы report_status_history и report_status_last выполнены успешно.\");\n    })\n    .catch((error) => {\n      console.error(\"Ошибка при выполнении запросов:\", error);\n    });\n  })()\n}}\n",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 15,
+  "originalTopRow": 11,
+  "parentColumnSpace": 30.21875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Наименование учреждения",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 27,
+  "serverSideFiltering": false,
+  "sourceData": "{{report_status_last.data.map((obj) => { \n  return {\n    label: obj[\"Наименование учреждения\"], \n    value: obj[\"Наименование учреждения\"]\n  } \n})}}",
+  "topRow": 6,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "prsgx7bu06",
+  "widgetName": "monitoring_select_name"
+}

@@ -1,0 +1,6 @@
+INSERT INTO books_monitoring_app.report_status_history ("FK ИНН", "FK Статус", "Дата статуса")
+VALUES (
+	{{this.params.login}},  -- Значение FK ИНН, переданное в параметры
+	1,                       -- FK Статус (фиксированное значение)
+	CURRENT_TIMESTAMP        -- Текущее время и дата
+);

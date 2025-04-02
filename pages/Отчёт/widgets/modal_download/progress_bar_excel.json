@@ -1,0 +1,43 @@
+{
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 22,
+  "counterClosewise": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "fillColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fillColor": "{{appsmith.theme.colors.primaryColor}}",
+  "isCanvas": false,
+  "isIndeterminate": true,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "9hm17u3c5h",
+  "leftColumn": 10,
+  "mobileBottomRow": 120,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 116,
+  "needsErrorInfo": false,
+  "originalBottomRow": 24,
+  "originalTopRow": 7,
+  "parentColumnSpace": 19.8125,
+  "parentId": "nh86e763s1",
+  "parentRowSpace": 10,
+  "progress": "50",
+  "progressType": "circular",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 52,
+  "showResult": false,
+  "steps": "1",
+  "topRow": 5,
+  "type": "PROGRESS_WIDGET",
+  "version": 1,
+  "widgetId": "73dnmr4o81",
+  "widgetName": "progress_bar_excel"
+}

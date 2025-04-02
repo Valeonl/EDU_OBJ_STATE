@@ -1,0 +1,70 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 71,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "send-message",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{\n  (() => {\n    // Проверяем, есть ли данные\n    if (!get_iogv_report_status.data || !get_iogv_report_status.data[0]) {\n      return true; // Если данные не загружены, кнопка скрыта\n    }\n\n    // Получаем результат функции\n    const status = get_iogv_report_status.data[0].result;\n\n    // Кнопка видна, если статус равен 1 или 2\n    return status !== 2;\n  })()\n}}",
+  "isLoading": false,
+  "isVisible": "{{\n  (() => {\n    // Проверяем, есть ли данные\n    if (!get_iogv_report_status.data || !get_iogv_report_status.data[0]) {\n      return false; // Если данные не загружены, кнопка скрыта\n    }\n\n    // Получаем результат функции\n    const status = get_iogv_report_status.data[0].result;\n\n    // Кнопка видна, если статус не равен 2\n    return status === 2;\n  })()\n}}",
+  "key": "ejgruosr50",
+  "leftColumn": 2,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{\n  (async () => {\n    try {\n      // Шаг 1: Проверяем статусы учреждений через get_iogv_report_status\n      await get_iogv_report_status.run();\n\n      // Проверяем результат\n      if (!get_iogv_report_status.data || !get_iogv_report_status.data[0]) {\n        showAlert(\"Не удалось загрузить данные о статусах учреждений.\", \"error\");\n        return; // Прерываем выполнение\n      }\n\n      const status = get_iogv_report_status.data[0][\"result\"];\n\n      // Если статус не равен 2 (не все учреждения имеют статус 'направлено на проверку' или 'утверждено')\n      if (status !== 2) {\n        showAlert(\"Не все учреждения имеют статус 'направлено на проверку' или 'утверждено'. Попробуйте обновить табличку.\", \"error\");\n        return; // Прерываем выполнение\n      }\n\n      // Шаг 2: Если статус проверки вернул 2, выполняем запросы параллельно\n      await Promise.all([\n        approved_all.run(), report_status_last.run(),        get_iogv_report_status.run()\n      ]);\n\n      // Шаг 3: Закрываем модальное окно, если всё успешно\n      closeModal(modal_send_ko.name);\n\n      // Выводим сообщение об успешном выполнении\n      showAlert(\"Операция выполнена успешно!\", \"success\");\n    } catch (error) {\n      // Обработка ошибок\n      console.error(\"Произошла ошибка:\", error);\n      showAlert(`Ошибка: ${error.message || \"Не удалось выполнить операцию.\"}`, \"error\");\n    }\n  })();\n}}",
+  "originalBottomRow": 71,
+  "originalTopRow": 65,
+  "parentId": "1i5wzpffln",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 61,
+  "text": "Отправить данные в \"Комитет образования\"",
+  "topRow": 65,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "6upfzp4wh8",
+  "widgetName": "btn_send_ko_final"
+}

@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 37,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "inputType": "html",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "rdefvu9fa3",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Введите текст комментария",
+  "labelTooltip": "Сюда можно написать причину возврата отчёта с указанием полей, столбцов, которые были заполнены некорректно или которые не были заполнены вовсе. Эту информацию пользователь ОУ сможет получить при входе в систему или при нажатии на значок с письмом рядом с текущим статусом отчёта",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 28,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "originalBottomRow": 37,
+  "originalTopRow": 17,
+  "parentColumnSpace": 6.9375,
+  "parentId": "yfr4a3tnuk",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 61,
+  "topRow": 17,
+  "type": "RICH_TEXT_EDITOR_WIDGET",
+  "version": 1,
+  "widgetId": "aivh0v1yij",
+  "widgetName": "msg_status_change_text"
+}

@@ -1,0 +1,7 @@
+SELECT 
+    rs.system_name AS status_system_name
+FROM books_monitoring_app.report_status_history rsh
+LEFT JOIN books_monitoring_app.report_status rs ON rsh."FK Статус" = rs.key0
+WHERE rsh."FK ИНН" = {{this.params.login}}::bigint
+ORDER BY rsh."Дата статуса" DESC
+LIMIT 1;

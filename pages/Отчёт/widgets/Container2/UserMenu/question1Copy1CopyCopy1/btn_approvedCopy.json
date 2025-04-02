@@ -1,0 +1,70 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "bottomRowBeforeCollapse": 170,
+  "boxShadow": "none",
+  "buttonColor": "#e0dede",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "eye-off",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{\n  appsmith.store.superuser ? false : true\n}}",
+  "isLoading": false,
+  "isVisible": "{{\n  appsmith.store.superuser ? true : false\n}}",
+  "key": "mdgyhnzvdl",
+  "leftColumn": 0,
+  "minWidth": 120,
+  "mobileBottomRow": 94,
+  "mobileLeftColumn": 4,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 90,
+  "needsErrorInfo": false,
+  "onClick": "{{\n(() => {\n\t// Проверяем, есть ли данные о суперпользователе\n\tif (appsmith.store.superuser) {\n\t\t\n\n\t\t// Если тип учетной записи - сотрудник сада или комитета\n\t\tif (appsmith.store.superuser.group_system_name === 'iogv_employee' || 'ko_employee') {\n\t\t\tremoveValue('user');\n\t\t\tnavigateTo('Мониторинг статусов отчётов', {}, 'SAME_WINDOW');\n\t\t} \n\t\t// Если тип учетной записи не определен\n\t\telse {\n\t\t\tshowAlert('Тип учетной записи не поддерживается', 'error');\n\t\t}\n\t} else {\n\t\tshowAlert('Данные о пользователе не загружены', 'error');\n\t}\n})()\n}}",
+  "originalBottomRow": 12,
+  "originalTopRow": 8,
+  "parentColumnSpace": 16.6875,
+  "parentId": "l3x6niohl8",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 10,
+  "text": "Вернуться обратно",
+  "topRow": 0,
+  "topRowBeforeCollapse": 166,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "a21l2nuxmz",
+  "widgetName": "btn_approvedCopy"
+}

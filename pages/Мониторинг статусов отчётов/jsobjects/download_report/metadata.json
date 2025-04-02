@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "67dd5d3c3ddf7e1ea183b23c_a1daef79-945d-45fe-b776-f6ded46fc67c",
+  "id": "Мониторинг статусов отчётов_download_report",
+  "unpublishedCollection": {
+    "name": "download_report",
+    "pageId": "Мониторинг статусов отчётов",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

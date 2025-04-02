@@ -1,0 +1,3 @@
+UPDATE appsmith.user_session
+SET unlogin_time = CURRENT_TIMESTAMP
+WHERE user_session_id = {{this.params.user_id}}

@@ -1,0 +1,47 @@
+WITH latest_status AS (
+	SELECT 
+	rsh.directory_inn_id,
+	MAX(rsh.created_date) AS max_date
+	FROM 
+	appsmith.report_status_history_mat_view rsh
+	GROUP BY 
+	rsh.directory_inn_id
+)
+SELECT DISTINCT ON (rsh.directory_inn_id)
+    di.inn AS "ИНН",
+    di.short_name AS "Наименование учреждения",
+    rs.print_name AS "Статус",
+    rs.system_name AS status_system_name,		
+		iogv.inn AS "ИОГВ ИНН",
+    iogv.short_name AS "ИОГВ", -- Краткое название ИОГВ
+    to_char(rsh.created_date + INTERVAL '3 hours', 'DD.MM.YYYY HH24:MI') AS "Дата",
+    CASE 
+        WHEN rs.system_name IN ('under_iogv_review', 'sent_for_review') THEN 
+            DATE_PART('day', AGE(CURRENT_DATE, rsh.created_date::date))
+        ELSE 
+            NULL
+    END AS "Ждет проверки, дн.",
+    rsh.directory_inn_id
+FROM 
+    appsmith.report_status_history_mat_view rsh
+LEFT JOIN 
+    appsmith.directory_inn di ON rsh.directory_inn_id = di.directory_inn_id
+		LEFT JOIN 
+    appsmith.directory_inn iogv ON di.iogv_inn::text = iogv.inn::text -- Соединение для получения краткого названия ИОГВ
+LEFT JOIN 
+    appsmith.status rs ON rsh.status_id = rs.status_id
+INNER JOIN 
+    latest_status ls ON rsh.directory_inn_id = ls.directory_inn_id AND rsh.created_date = ls.max_date
+INNER JOIN 
+    appsmith.report_directory_inn rdi ON rsh.directory_inn_id = rdi.directory_inn_id -- Привязка к report_directory_inn
+WHERE 
+    rdi.report_id = {{ appsmith.store.selected_report.report_id }} -- Условие для фильтрации по report_id
+    AND ({{ appsmith.store.superuser.group_system_name === 'ko_employee' ? 'true' : `di.iogv_inn = '${appsmith.store.superuser.ou_inn}'`}})
+    AND di.directory_inn_finance_type_id = 2			
+		AND di.directory_inn_type_id != 2 AND di.directory_inn_type_id != 7
+		AND ({{ appsmith.store.superuser.ou_inn === '999999999' ? 'true' : `di.iogv_inn != 999999999`}})
+    AND ({{ monitoring_select_inn.selectedOptionValue ? `di.inn::text = '${monitoring_select_inn.selectedOptionValue}'` : 'true' }})
+    AND ({{ monitoring_status_filter_selec.selectedOptionValue ? `rs.print_name::text = '${monitoring_status_filter_selec.selectedOptionValue}'` : 'true' }})
+		AND ({{ monitoring_select_iogv.selectedOptionValue ? `iogv.inn ::text = '${monitoring_select_iogv.selectedOptionValue}'` : 'true' }})
+ORDER BY 
+    rsh.directory_inn_id, rsh.created_date DESC;

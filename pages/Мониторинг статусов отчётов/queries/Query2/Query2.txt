@@ -1,0 +1,18 @@
+SELECT 
+ua.iogv,
+ua.iogv_name,
+ua.iogv_short_name,
+ua.login,
+ua.agencyname,
+course_subject,
+class_spo,
+student_count_2024_2025,
+projected_student_count,
+unified_state_count,
+additional_demand
+FROM books_monitoring_app.form_2_1 form2
+LEFT JOIN access_control.user_auth ua
+ON form2.inn = ua.login::bigint
+WHERE iogv = {{appsmith.store.superuser.login}}::BIGINT
+ORDER BY ua.login,form2.key0
+

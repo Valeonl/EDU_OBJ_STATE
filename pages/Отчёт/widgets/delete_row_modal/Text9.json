@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1.25rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "u7f35m405o",
+  "leftColumn": 3,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "originalBottomRow": 11,
+  "originalTopRow": 0,
+  "overflow": "NONE",
+  "parentId": "psl4a0brty",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 57,
+  "shouldScrollContents": true,
+  "shouldTruncate": false,
+  "text": "{{\n`Вы действительно хотите удалить данную строку из отчёта?\\n\\nСтрока с номером <a>${\nappsmith.store.work_table === 'edu_object_state_appendix_1'\n? table_appendix_1.triggeredRow.row_num\n: appsmith.store.work_table === 'edu_object_state_appendix_2'\n? table_appendix_2.triggeredRow.row_num\n: appsmith.store.work_table === 'edu_object_state_appendix_3'\n? table_appendix_3.triggeredRow.row_num\n: appsmith.store.work_table === 'edu_object_state_appendix_4'\n      ? table_appendix_4.triggeredRow.row_num\n: appsmith.store.work_table === 'edu_object_state_appendix_5'\n      ? table_appendix_5.triggeredRow.row_num\n: appsmith.store.work_table === 'edu_object_state_appendix_6'\n      ? table_appendix_6.triggeredRow.row_num\n: 'Некорректная таблица'\n}</a>`\n}}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 0,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "l4rda41xwk",
+  "widgetName": "Text9"
+}

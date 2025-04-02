@@ -1,0 +1,22 @@
+INSERT INTO report_data.edu_object_state_appendix_3 (
+	non_functional_sanitary_units,
+	object_address_id,
+	reasons_for_closure,
+	allocated_funds_current_repair,
+	allocated_funds_capital_repair,
+	additional_funds_current_repair,
+	additional_funds_capital_repair,
+	created_date,
+	directory_inn_id
+)
+VALUES (
+	{{ table_appendix_3.newRow.non_functional_sanitary_units }},
+	'{{ table_appendix_3.newRow.object_address_id }}',
+	'{{ table_appendix_3.newRow.reasons_for_closure }}',
+	{{ table_appendix_3.newRow.allocated_funds_current_repair }},
+	{{ table_appendix_3.newRow.allocated_funds_capital_repair }},
+	{{ table_appendix_3.newRow.additional_funds_current_repair }},
+	{{ table_appendix_3.newRow.additional_funds_capital_repair }},
+	CURRENT_TIMESTAMP,
+	{{ appsmith.store.user.ou_id }}
+);

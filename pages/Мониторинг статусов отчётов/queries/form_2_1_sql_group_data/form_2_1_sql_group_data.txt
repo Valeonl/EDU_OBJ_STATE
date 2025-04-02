@@ -1,0 +1,40 @@
+SELECT 
+    ua.iogv,
+    ua.iogv_name,
+    ua.iogv_short_name,
+    course_subject,
+    class_spo,
+    SUM(student_count_2024_2025) as student_count_2024_2025,
+    SUM(projected_student_count) as projected_student_count,
+    SUM(unified_state_count) as unified_state_count,
+    SUM(additional_demand) as additional_demand
+FROM books_monitoring_app.form_2_1 form2
+LEFT JOIN access_control.user_auth ua
+ON form2.inn = ua.login::bigint
+WHERE iogv = {{appsmith.store.superuser.login}}::BIGINT 
+    AND ua.is_report_required_book = true 
+		{{ appsmith.store.download_type === 'gov' 
+? "AND ua.type_ou NOT IN ('ЧОУ', 'АНОО', 'АНПО')"
+: appsmith.store.download_type === 'private' 
+? "AND ua.type_ou IN ('ЧОУ', 'АНОО', 'АНПО')"
+: ""
+}}
+    AND ua.login::bigint IN (
+			SELECT DISTINCT rsh."FK ИНН"
+			FROM books_monitoring_app.report_status_history rsh
+			LEFT JOIN books_monitoring_app.report_status rs 
+			ON rsh."FK Статус" = rs.key0
+			WHERE rs.system_name NOT IN ('excluded')
+			AND rsh."Дата статуса" = (
+				SELECT MAX("Дата статуса")
+				FROM books_monitoring_app.report_status_history
+				WHERE "FK ИНН" = rsh."FK ИНН"
+			)
+		)
+GROUP BY 
+    ua.iogv,
+    ua.iogv_name,
+    ua.iogv_short_name,
+    course_subject,
+    class_spo
+ORDER BY class_spo::BIGINT ASC, course_subject

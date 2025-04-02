@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 28,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1.25rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "u7f35m405o",
+  "leftColumn": 3,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "originalBottomRow": 28,
+  "originalTopRow": 0,
+  "overflow": "NONE",
+  "parentId": "2cp3v50n9l",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 57,
+  "shouldScrollContents": true,
+  "shouldTruncate": false,
+  "text": "Вы действительно хотите исключить данное учреждение<a>\n{{appsmith.store.excluded_ou[\"Наименование учреждения\"]}}\nИНН: {{appsmith.store.excluded_ou[\"ИНН\"]}}</a>\nиз процесса сбора отчёта?\n\n<b style=\"font-size: 1rem;\">**После исключения отчёта данного ОУ Вы сможете отправить данные в Комитет образования без учёта статуса этого учреждения**</b>\n\n<b style=\"font-size: 1rem; color: green;\">\nПроцесс является обратимым (для включения учреждения в отчёт нажмите на иконку со стрелкой в этом же поле)</b>\n",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 0,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "3m6vorzgp8",
+  "widgetName": "Text9"
+}

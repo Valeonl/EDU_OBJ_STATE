@@ -1,0 +1,85 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "bottomRowBeforeCollapse": 83,
+  "boxShadow": "none",
+  "buttonColor": "{{ (!getStatus.data[0] || (getStatus.data[0] && (getStatus.data[0]['status_system_name'] === 'in_work_ou' || getStatus.data[0]['status_system_name'] === 'returned_for_revision'))) ? '#2068B3' : (getStatus.data[0] && ( getStatus.data[0]['status_system_name'] === 'sent_for_review' || getStatus.data[0]['status_system_name'] === 'under_iogv_review' || ( getStatus.data[0]['status_system_name'] === 'approved' && appsmith.store.superuser) || ( getStatus.data[0]['status_system_name'] === 'send_in_ko' && appsmith.store.superuser))) ? 'orange' : '' }}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "iconName"
+    },
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "iconName"
+    },
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "{{ (!getStatus.data[0] || (getStatus.data[0] && (getStatus.data[0]['status_system_name'] === 'in_work_ou' || getStatus.data[0]['status_system_name'] === 'returned_for_revision'))) ? 'send-message' : (getStatus.data[0] && ( getStatus.data[0]['status_system_name'] === 'sent_for_review' || getStatus.data[0]['status_system_name'] === 'under_iogv_review' || ( getStatus.data[0]['status_system_name'] === 'approved' && appsmith.store.superuser) || ( getStatus.data[0]['status_system_name'] === 'send_in_ko' && appsmith.store.superuser))) ? 'hand' : '' }}",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{\n  getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision' || \n   (getStatus.data[0]['status_system_name'] === 'under_iogv_review' && appsmith.store.superuser) || \n   getStatus.data[0]['status_system_name'] === 'sent_for_review' || ( getStatus.data[0]['status_system_name'] === 'approved' && appsmith.store.superuser) || ( getStatus.data[0]['status_system_name'] === 'send_in_ko' && appsmith.store.superuser))\n? false : true\n}}",
+  "isLoading": false,
+  "isVisible": "{{\n  getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision' || \n  (getStatus.data[0]['status_system_name'] === 'under_iogv_review' && appsmith.store.superuser) || \n   getStatus.data[0]['status_system_name'] === 'sent_for_review' || ( getStatus.data[0]['status_system_name'] === 'approved' && appsmith.store.superuser) || ( getStatus.data[0]['status_system_name'] === 'send_in_ko' && appsmith.store.superuser))\n? true : false\n}}",
+  "key": "6uzs5i5ami",
+  "leftColumn": 26,
+  "minWidth": 120,
+  "mobileBottomRow": 63,
+  "mobileLeftColumn": 32,
+  "mobileRightColumn": 48,
+  "mobileTopRow": 59,
+  "needsErrorInfo": false,
+  "onClick": "{{\n(async () => {\n\ttry {\n\t\t// Проверяем статус отчёта\n\t\tif (!getStatus.data[0] || \n\t\t\t\t(getStatus.data[0] && \n\t\t\t\t (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n\t\t\t\t\tgetStatus.data[0]['status_system_name'] === 'returned_for_revision'))) {\n\t\t\t// Если статус \"в работе ОУ\" или \"возвращено на доработку\", показываем модальное окно\n\t\t\tif (true) { // Условие для проверки заполненности форм\n\t\t\t\tawait showModal(report_submit_modal.name);\n\t\t\t}\n\t\t\t// Устанавливаем переменную isReportSent в true\n\t\t\tstoreValue('isReportSent', true);\n\t\t} else if (getStatus.data[0] && \n\t\t\t\t\t\t\t (getStatus.data[0]['status_system_name'] === 'under_iogv_review' || \n\t\t\t\t\t\t\t\tgetStatus.data[0]['status_system_name'] === 'sent_for_review')) {\n\t\t\t// Если статус \"на проверке ИОГВ\" или \"направлено на проверку\"\n\t\t\tif (appsmith.store.superuser) {\n\t\t\t\t// Если это суперпользователь, показываем модальное окно и не выполняем другие действия\n\t\t\t\tawait showModal(modal_return_revision.name);\n\t\t\t} else {\n\t\t\t\t// Для обычных пользователей выполняем запросы\n\t\t\t\tawait Promise.all([\n\t\t\t\t\tstoreValue('report', '1'), // Сохраняем значение в store\n\t\t\t\t\treturned_for_revision.run({comment: 'Отчёт был возвращён на доработку'}), // Возвращаем отчёт на доработку\n\t\t\t\t\tgetStatus.run(), // Обновляем статус\n\t\t\t\t]);\n\t\t\t\t// Устанавливаем переменную isReportSent в false\n\t\t\t\tstoreValue('isReportSent', false);\n\t\t\t\t// Показываем сообщение об успешном изменении статуса\n\t\t\t\tawait showAlert(`Статус отчёта изменён на \"${getStatus.data[0]['Статус']}\"`, 'success');\n\t\t\t}\n\t\t} else if (getStatus.data[0] && \n\t\t\t\t\t\t\t (getStatus.data[0]['status_system_name'] === 'approved' || \n\t\t\t\t\t\t\t\tgetStatus.data[0]['status_system_name'] === 'send_in_ko') && \n\t\t\t\t\t\t\t appsmith.store.superuser) {\n\t\t\t// Если статус \"утверждено\" или \"направлено в КО\" и это суперпользователь\n\t\t\tif (appsmith.store.superuser) {\n\t\t\t\t// Показываем модальное окно и не выполняем других действий\n\t\t\t\tawait showModal(modal_return_revision.name);\n\t\t\t}\n\t\t}\n\t} catch (error) {\n\t\tconsole.error(\"Ошибка при выполнении операций:\", error);\n\t\tawait showAlert('Произошла ошибка при выполнении операций', 'error');\n\t}\n})();\n}}",
+  "originalBottomRow": 10,
+  "originalTopRow": 6,
+  "parentColumnSpace": 30.21875,
+  "parentId": "l3x6niohl8",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 36,
+  "text": "{{ (!getStatus.data[0] || (getStatus.data[0] && (getStatus.data[0]['status_system_name'] === 'in_work_ou' || getStatus.data[0]['status_system_name'] === 'returned_for_revision'))) ? 'Отправить отчёт' : (getStatus.data[0] && ( getStatus.data[0]['status_system_name'] === 'sent_for_review' || getStatus.data[0]['status_system_name'] === 'under_iogv_review' || ( getStatus.data[0]['status_system_name'] === 'approved' && appsmith.store.superuser)|| ( getStatus.data[0]['status_system_name'] === 'send_in_ko' && appsmith.store.superuser))) ? 'Вернуть в работу' : '' }}",
+  "topRow": 0,
+  "topRowBeforeCollapse": 79,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "6fq57r9nmc",
+  "widgetName": "btn_report_modal"
+}

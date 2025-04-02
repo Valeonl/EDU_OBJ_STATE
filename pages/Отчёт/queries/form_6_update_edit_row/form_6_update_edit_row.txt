@@ -1,0 +1,22 @@
+UPDATE report_data.edu_object_state_appendix_6
+SET 
+    total_sports_halls = {{table_appendix_6.updatedRow.total_sports_halls}}::BIGINT,		
+    repair_necessity = '{{table_appendix_6.updatedRow.repair_necessity ? table_appendix_6.updatedRow.repair_necessity : '' }}',
+    inspection_orders = {{ table_appendix_6.updatedRow.inspection_orders ? table_appendix_6.updatedRow.inspection_orders : null }},
+    object_address_id = {{ table_appendix_6.updatedRow.object_address_id}},
+    planned_year_of_implementation = {{ table_appendix_6.updatedRow.planned_year_of_implementation ? table_appendix_6.updatedRow.planned_year_of_implementation : null }},
+    allocated_funds_current_repair_2025 = {{ table_appendix_6.updatedRow.allocated_funds_current_repair_2025_test }},
+    allocated_funds_current_repair_2026 = {{ table_appendix_6.updatedRow.allocated_funds_current_repair_2026 }},
+    allocated_funds_current_repair_2027 = {{ table_appendix_6.updatedRow.allocated_funds_current_repair_2027_test }},
+    allocated_funds_capital_repair_2025 = {{ table_appendix_6.updatedRow.allocated_funds_capital_repair_2025 }},
+    allocated_funds_capital_repair_2026 = {{ table_appendix_6.updatedRow.allocated_funds_capital_repair_2026 }},
+    allocated_funds_capital_repair_2027 = {{ table_appendix_6.updatedRow.allocated_funds_capital_repair_2027 }},
+    additional_funds_current_repair_2025 = {{ table_appendix_6.updatedRow.additional_funds_current_repair_2025 }},
+    additional_funds_current_repair_2026 = {{ table_appendix_6.updatedRow.additional_funds_current_repair_2026 }},
+    additional_funds_current_repair_2027 = {{ table_appendix_6.updatedRow.additional_funds_current_repair_2027 }},
+    additional_funds_capital_repair_2025 = {{ table_appendix_6.updatedRow.additional_funds_capital_repair_2025 }},
+    additional_funds_capital_repair_2026 = {{ table_appendix_6.updatedRow.additional_funds_capital_repair_2026 }},
+    additional_funds_capital_repair_2027 = {{ table_appendix_6.updatedRow.additional_funds_capital_repair_2027 }}
+WHERE 
+    directory_inn_id = {{ appsmith.store.user.ou_id }}
+    AND row_index = {{ table_appendix_6.updatedRow.row_index }};

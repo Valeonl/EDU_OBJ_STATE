@@ -1,0 +1,14 @@
+INSERT INTO appsmith.report_status_history (
+	directory_inn_id,
+	status_id,
+	created_date,
+	comment,
+	report_id
+)
+VALUES (
+	{{ this.params.directory_inn_id }}, -- Значение directory_inn_id, переданное в параметры
+	(SELECT status_id FROM appsmith.status WHERE system_name = 'under_iogv_review'), -- ID статуса "возвращено на доработку"
+	CURRENT_TIMESTAMP, -- Текущее время и дата
+	'{{ this.params.comment }}', -- Комментарий,
+	{{appsmith.store.selected_report.report_id}}
+);

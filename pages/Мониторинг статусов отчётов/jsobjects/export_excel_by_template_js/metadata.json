@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "67dd5d3c3ddf7e1ea183b23c_f00654fd-73f4-4145-9e1b-30f74fd8f113",
+  "id": "Мониторинг статусов отчётов_export_excel_by_template_js",
+  "unpublishedCollection": {
+    "name": "export_excel_by_template_js",
+    "pageId": "Мониторинг статусов отчётов",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

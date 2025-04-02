@@ -1,0 +1,73 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "bottomRowBeforeCollapse": 170,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "briefcase",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{\n  appsmith.store.superuser && \n  getStatus.data[0]?.status_system_name === 'under_iogv_review' ? false : true\n}}",
+  "isLoading": false,
+  "isVisible": "{{\n  appsmith.store.superuser && \n  getStatus.data[0]?.status_system_name === 'under_iogv_review' ? true : false\n}}",
+  "key": "mdgyhnzvdl",
+  "leftColumn": 10,
+  "minWidth": 120,
+  "mobileBottomRow": 94,
+  "mobileLeftColumn": 4,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 90,
+  "needsErrorInfo": false,
+  "onClick": "{{report_approved.run().then(() => {\n  showAlert(`Отчёт для ИНН: ${appsmith.store.user.user_login} был утверждён`, 'success');\n\tnavigateTo('Мониторинг статусов отчётов', {}, 'SAME_WINDOW');\n});\n}}",
+  "originalBottomRow": 12,
+  "originalTopRow": 8,
+  "parentColumnSpace": 16.6875,
+  "parentId": "l3x6niohl8",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 19,
+  "text": "Утвердить отчёт",
+  "topRow": 0,
+  "topRowBeforeCollapse": 166,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "x1v5b4yusl",
+  "widgetName": "btn_approved"
+}

@@ -1,0 +1,45 @@
+SELECT 
+ua.iogv,
+ua.iogv_name,
+ua.iogv_short_name,
+ua.login,
+ua.type_ou,
+ua.agencyname,
+inn,
+"number",
+years_of_use,
+textbooks_written_off_2024,
+reason_number,
+CASE WHEN writeoff_reason = 'null' THEN '' ELSE writeoff_reason END AS writeoff_reason,
+total_writeoff_cost_thousands_rub,
+CASE 
+        WHEN textbooks_written_off_2024 IS NULL
+         AND reason_number IS NULL
+         AND writeoff_reason IS NULL
+				 AND total_writeoff_cost_thousands_rub IS NULL
+        THEN true 
+        ELSE false 
+    END as isHidenRow
+FROM books_monitoring_app.form_4 form4
+LEFT JOIN access_control.user_auth ua
+ON form4.inn = ua.login::bigint
+WHERE iogv = {{appsmith.store.superuser.login}}::BIGINT AND ua.is_report_required_book = true
+{{ appsmith.store.download_type === 'gov' 
+    ? "AND ua.type_ou NOT IN ('ЧОУ', 'АНОО', 'АНПО')"
+    : appsmith.store.download_type === 'private' 
+      ? "AND ua.type_ou IN ('ЧОУ', 'АНОО', 'АНПО')"
+      : ""
+}}
+AND ua.login::bigint IN (
+	SELECT DISTINCT rsh."FK ИНН"
+	FROM books_monitoring_app.report_status_history rsh
+	LEFT JOIN books_monitoring_app.report_status rs ON rsh."FK Статус" = rs.key0
+	WHERE rs.system_name NOT IN ('excluded')
+	AND rsh."Дата статуса" = (
+		SELECT MAX("Дата статуса")
+		FROM books_monitoring_app.report_status_history
+		WHERE "FK ИНН" = rsh."FK ИНН"
+	)
+)
+ORDER BY ua.login,form4."number"
+

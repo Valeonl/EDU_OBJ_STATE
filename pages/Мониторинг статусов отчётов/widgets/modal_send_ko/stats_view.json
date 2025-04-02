@@ -1,0 +1,53 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 65,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ci6ihl0dp9",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "originalBottomRow": 65,
+  "originalTopRow": 13,
+  "overflow": "NONE",
+  "parentId": "1i5wzpffln",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "shouldTruncate": false,
+  "text": "<div style=\"font-family: Arial, sans-serif; color: #333; background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\">\n  <!-- Заголовок -->\n  <h2 style=\"font-size: 24px; color: #2c3e50; text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 0px; margin: 0;\">\n    Текущая статистика\n  </h2>\n\n  <!-- Условный рендеринг -->\n  {{\n    (() => {\n      // Проверяем, есть ли данные\n      if (!get_iogv_report_status.data || !get_iogv_report_status.data[0]) {\n        return `\n          <div style=\"background: #2c3e50; color: #ffffff; padding: 10px; border-radius: 6px; margin: 10px 0; text-align: center;\">\n            <span style=\"font-size: 18px;\">Данные загружаются...</span>\n          </div>\n        `;\n      }\n\n      // Получаем результат функции\n      const status = get_iogv_report_status.data[0].result;\n\n      // Если статус равен 3, выводим сообщение\n      if (status === 3) {\n        return `\n          <div style=\"background: #2c3e50; color: #ffffff; padding: 10px; border-radius: 6px; margin: 10px 0; text-align: center;\">\n            <span style=\"font-size: 18px;\">Все учреждения уже были направлены в комитет образования</span>\n          </div>\n        `;\n      }\n\n      // Если статус равен 1 или 2, выводим общую статистику\n      return `\n        <!-- Общий итог -->\n        <div style=\"background: #2c3e50; color: #ffffff; padding: 10px; border-radius: 6px; margin: 10px 0; text-align: center;\">\n          <span style=\"font-size: 18px;\">Всего ОУ:</span>\n          <strong style=\"font-size: 24px; color: #3498db;\">${report_status_last.data.length}</strong>\n        </div>\n        <!-- Статистика по статусам -->\n        <div style=\"display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start;\">\n          <!-- В работе ОУ -->\n          <div style=\"background: #ffffff; padding: 10px; border-radius: 6px; flex: 1 1 200px;  min-height: 40px; display: flex; flex-direction: column; justify-content: flex-start;\">\n            <span style=\"color: #6b6e70; font-weight: bold;\">В работе ОУ:</span>\n            <strong style=\"color: #6b6e70; font-size: 18px;\">${report_status_last.data.filter(row => row[\"status_system_name\"] === 'in_work_ou').length}</strong>\n          </div>\n          <!-- Направлено на проверку -->\n          <div style=\"background: #ffdab9; padding: 10px; border-radius: 6px; flex: 1 1 200px;  min-height: 40px; display: flex; flex-direction: column; justify-content: flex-start;\">\n            <span style=\"color: #6b6e70; font-weight: bold;\">Направлено на проверку:</span>\n            <strong style=\"color: #6b6e70; font-size: 18px;\">${report_status_last.data.filter(row => row[\"status_system_name\"] === 'sent_for_review').length}</strong>\n          </div>\n          <!-- На проверке ИОГВ -->\n          <div style=\"background: #e1e3f5; padding: 10px; border-radius: 6px; flex: 1 1 200px;  min-height: 40px; display: flex; flex-direction: column; justify-content: flex-start;\">\n            <span style=\"color: #6b6e70; font-weight: bold;\">На проверке ИОГВ:</span>\n            <strong style=\"color: #6b6e70; font-size: 18px;\">${report_status_last.data.filter(row => row[\"status_system_name\"] === 'under_iogv_review').length}</strong>\n          </div>\n          <!-- Возвращено на доработку -->\n          <div style=\"background: #ffe5ec; padding: 10px; border-radius: 6px; flex: 1 1 200px;  min-height: 40px; display: flex; flex-direction: column; justify-content: flex-start;\">\n            <span style=\"color: #6b6e70; font-weight: bold;\">Возвращено на доработку:</span>\n            <strong style=\"color: #6b6e70; font-size: 18px;\">${report_status_last.data.filter(row => row[\"status_system_name\"] === 'returned_for_revision').length}</strong>\n          </div>\n          <!-- Утверждено -->\n          <div style=\"background: #d6eadf; padding: 10px; border-radius: 6px; flex: 1 1 200px;  min-height: 40px; display: flex; flex-direction: column; justify-content: flex-start;\">\n            <span style=\"color: #6b6e70; font-weight: bold;\">Утверждено:</span>\n            <strong style=\"color: #6b6e70; font-size: 18px;\">${report_status_last.data.filter(row => row[\"status_system_name\"] === 'approved').length}</strong>\n          </div>\n          <!-- Ещё не приступали -->\n          <div style=\"background: grey; padding: 10px; border-radius: 6px; flex: 1 1 200px;  min-height: 40px; display: flex; flex-direction: column; justify-content: flex-start;\">\n            <span style=\"color: white; font-weight: bold;\">Ещё не приступали:</span>\n            <strong style=\"color: white; font-size: 18px;\">${report_status_last.data.filter(row => row[\"status_system_name\"] === 'never_login').length}</strong>\n          </div>\n          <!-- Ни разу не заходили -->\n          <div style=\"background: #333; padding: 10px; border-radius: 6px; flex: 1 1 200px;  min-height: 40px; display: flex; flex-direction: column; justify-content: flex-start;\">\n            <span style=\"color: white; font-weight: bold;\">Ни разу не заходили:</span>\n            <strong style=\"color: white; font-size: 18px;\">${report_status_last.data.filter(row => row[\"status_system_name\"] === 'excluded').length}</strong>\n          </div>\n        </div>\n      `;\n    })()\n  }}\n</div>\n",
+  "textAlign": "CENTER",
+  "textColor": "#3f3f46",
+  "topRow": 13,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "06ksfk3359",
+  "widgetName": "stats_view"
+}

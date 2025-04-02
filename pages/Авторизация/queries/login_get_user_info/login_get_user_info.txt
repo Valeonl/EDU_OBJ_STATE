@@ -1,0 +1,13 @@
+SELECT 
+    *,
+    CASE 
+        WHEN user_password = '{{input_password.text}}' THEN true
+        ELSE false
+    END AS is_valid_password
+FROM 
+    appsmith.user_mat_view
+WHERE 
+    user_login = '{{input_inn.text}}'
+ORDER BY 
+    is_valid_password DESC
+LIMIT 1;

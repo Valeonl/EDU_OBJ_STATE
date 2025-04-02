@@ -1,0 +1,39 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "defaultImage": "https://bitrix24public.com/b24-9j211s.bitrix24.ru/docs/pub/7119208d5b6ceb0f1e06b77d4e2fd655/showFile/?&token=7qh3p4zbj0qb",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "https://bitrix24public.com/b24-9j211s.bitrix24.ru/docs/pub/7119208d5b6ceb0f1e06b77d4e2fd655/showFile/?&token=7qh3p4zbj0qb",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "xup470dubt",
+  "leftColumn": 0,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 59,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "parentColumnSpace": 7.725639343261719,
+  "parentId": "8af2dkj2e3",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "topRow": 4,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "xb90oyl2lu",
+  "widgetName": "Image1"
+}

@@ -1,0 +1,37 @@
+WITH latest_status AS (
+    SELECT
+        "ОУ".directory_inn_id,
+        rs.system_name AS latest_status
+    FROM appsmith.report_directory_inn AS "Отчёты ОУ"
+        INNER JOIN appsmith.directory_inn AS "ОУ"
+    ON "Отчёты ОУ".directory_inn_id = "ОУ".directory_inn_id
+             LEFT JOIN (
+        SELECT DISTINCT ON (directory_inn_id) *
+        FROM appsmith.report_status_history
+        ORDER BY directory_inn_id, created_date DESC
+    ) rsh ON "ОУ".directory_inn_id::bigint = rsh.directory_inn_id
+             LEFT JOIN appsmith.status rs ON rsh.status_id = rs.status_id
+    WHERE "ОУ".iogv_inn = {{appsmith.store.superuser.ou_inn}} AND "Отчёты ОУ".report_id = 1
+)
+SELECT
+    CASE
+        -- Если есть хотя бы одно учреждение с другим статусом
+        WHEN EXISTS (
+            SELECT 1
+            FROM latest_status
+            WHERE latest_status NOT IN ('sent_for_review', 'approved', 'send_in_ko', 'excluded', 'never_login')
+        ) THEN 1
+        -- Если все учреждения имеют статус 'send_in_ko'
+        WHEN NOT EXISTS (
+            SELECT 1
+            FROM latest_status
+            WHERE latest_status != 'send_in_ko'
+        ) THEN 3
+        -- Если все учреждения имеют статус 'sent_for_review' или 'approved'
+        WHEN NOT EXISTS (
+            SELECT 1
+            FROM latest_status
+            WHERE latest_status NOT IN ('sent_for_review', 'approved')
+        ) THEN 2
+        ELSE 1 -- Добавьте ELSE, чтобы обработать случаи, когда ни одно из условий не выполняется
+        END AS result;

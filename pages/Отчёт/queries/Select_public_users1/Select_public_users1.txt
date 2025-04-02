@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  public.users
+WHERE
+  "gender" ilike '%{{table_appendix_6Copy.searchText}}%'
+ORDER BY
+  "{{table_appendix_6Copy.sortOrder.column || 'id'}}" {{table_appendix_6Copy.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{table_appendix_6Copy.pageSize}}
+OFFSET
+  {{table_appendix_6Copy.pageOffset}}

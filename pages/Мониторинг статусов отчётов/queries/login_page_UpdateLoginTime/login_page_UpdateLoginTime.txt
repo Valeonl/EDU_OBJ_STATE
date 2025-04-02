@@ -1,0 +1,3 @@
+UPDATE access_control.user_auth
+  SET last_login = {{new Date().toISOString()}}
+  WHERE login = {{this.params.login}};

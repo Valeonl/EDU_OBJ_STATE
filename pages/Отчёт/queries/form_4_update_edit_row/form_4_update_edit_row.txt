@@ -1,0 +1,12 @@
+UPDATE report_data.edu_object_state_appendix_4
+SET 
+    total_food_blocks_in_poor_condition = {{ table_appendix_4.updatedRow.total_food_blocks_in_poor_condition }},
+    object_address_id = {{ table_appendix_4.updatedRow.object_address_id }},
+    reasons_for_poor_condition = '{{ table_appendix_4.updatedRow.reasons_for_poor_condition }}',
+    allocated_funds_current_repair = {{ table_appendix_4.updatedRow.allocated_funds_current_repair }},
+    allocated_funds_capital_repair = {{ table_appendix_4.updatedRow.allocated_funds_capital_repair }},
+    additional_funds_current_repair = {{ table_appendix_4.updatedRow.additional_funds_current_repair }},
+    additional_funds_capital_repair = {{ table_appendix_4.updatedRow.additional_funds_capital_repair }}
+WHERE 
+    directory_inn_id = {{ appsmith.store.user.ou_id }}
+    AND row_index = {{ table_appendix_4.updatedRow.row_index }};

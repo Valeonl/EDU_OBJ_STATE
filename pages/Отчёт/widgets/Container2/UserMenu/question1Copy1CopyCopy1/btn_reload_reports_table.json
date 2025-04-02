@@ -1,0 +1,70 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "bottomRowBeforeCollapse": 83,
+  "boxShadow": "none",
+  "buttonColor": "#e0dede",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "updated",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{\n  getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision' || \n   getStatus.data[0]['status_system_name'] === 'under_iogv_review' || \n   getStatus.data[0]['status_system_name'] === 'sent_for_review')\n? false : true\n\n}}",
+  "isLoading": false,
+  "isVisible": "{{\n  getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision' || \n   getStatus.data[0]['status_system_name'] === 'under_iogv_review' || \n   getStatus.data[0]['status_system_name'] === 'sent_for_review')\n? true : false\n}}",
+  "key": "jua4vbhwqe",
+  "leftColumn": 19,
+  "minWidth": 120,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 49,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onClick": "{{getStatus.run();\nform_1_sql_data.run();\nform_2_sql_data.run()\nform_3_sql_data.run();\nform_4_sql_data.run();\nform_5_sql_data.run();\nform_6_sql_data.run();\nlsfusion_obj.run()}}",
+  "originalBottomRow": 12,
+  "originalTopRow": 8,
+  "parentColumnSpace": 14.078125,
+  "parentId": "l3x6niohl8",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 26,
+  "text": "Обновить",
+  "topRow": 0,
+  "topRowBeforeCollapse": 79,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "5yxs2yyls3",
+  "widgetName": "btn_reload_reports_table"
+}

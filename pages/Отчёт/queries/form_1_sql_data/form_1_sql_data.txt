@@ -1,0 +1,30 @@
+SELECT 
+    row_number() OVER (ORDER BY created_date) AS row_num,
+    total_sanitary_units,
+    compliance_status,
+    non_compliance_details,
+    inspection_orders,
+    units_needing_repair,
+    work_description,
+    object_address_id,
+    planned_year_of_implementation,
+    allocated_funds_current_repair_2025,
+    allocated_funds_current_repair_2026,
+    allocated_funds_current_repair_2027,
+    allocated_funds_capital_repair_2025,
+    allocated_funds_capital_repair_2026,
+    allocated_funds_capital_repair_2027,
+    additional_funds_current_repair_2025,
+    additional_funds_current_repair_2026,
+    additional_funds_current_repair_2027,
+    additional_funds_capital_repair_2025,
+    additional_funds_capital_repair_2026,
+    additional_funds_capital_repair_2027,
+    created_date,
+    directory_inn_id,
+    row_index
+FROM 
+    report_data.edu_object_state_appendix_1
+WHERE 
+    directory_inn_id = {{appsmith.store.user.ou_id}}
+ORDER BY created_date;

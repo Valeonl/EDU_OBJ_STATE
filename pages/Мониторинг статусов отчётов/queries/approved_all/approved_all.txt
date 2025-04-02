@@ -1,0 +1,21 @@
+INSERT INTO appsmith.report_status_history (
+	directory_inn_id,
+	status_id,
+	created_date,
+	session_id,
+	comment,
+	report_id
+)
+SELECT
+    "ОУ".directory_inn_id,
+    rs.status_id,
+    CURRENT_TIMESTAMP AS "Дата статуса",
+    {{ appsmith.store.user_session.user_session_id}}, -- Отправитель
+    'Отправлен в КО в массовом утверждении',
+    {{appsmith.store.selected_report.report_id}}
+FROM appsmith.report_directory_inn AS "Отчёты ОУ"
+         INNER JOIN appsmith.directory_inn AS "ОУ"
+                    ON "Отчёты ОУ".directory_inn_id = "ОУ".directory_inn_id
+    LEFT JOIN appsmith.status rs ON rs.system_name = 'send_in_ko'
+WHERE "ОУ".iogv_inn = {{appsmith.store.superuser.ou_inn}} AND "Отчёты ОУ".report_id = {{appsmith.store.selected_report.report_id}}
+  AND rs.system_name = 'send_in_ko'; -- Статус "напрвлеон в ко"

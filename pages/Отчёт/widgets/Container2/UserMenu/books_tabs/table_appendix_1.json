@@ -1,0 +1,1466 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowAddNewRow": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n}}",
+  "animateLoading": false,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 66,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "canFreezeColumn": false,
+  "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "row_num",
+    "total_sanitary_units",
+    "compliance_status",
+    "non_compliance_details",
+    "inspection_orders",
+    "units_needing_repair",
+    "work_description",
+    "object_address_id",
+    "planned_year_of_implementation",
+    "allocated_funds_current_repair_2025",
+    "allocated_funds_current_repair_2026",
+    "allocated_funds_current_repair_2027",
+    "allocated_funds_capital_repair_2025",
+    "allocated_funds_capital_repair_2026",
+    "allocated_funds_capital_repair_2027",
+    "additional_funds_current_repair_2025",
+    "additional_funds_current_repair_2026",
+    "additional_funds_current_repair_2027",
+    "additional_funds_capital_repair_2025",
+    "additional_funds_capital_repair_2026",
+    "additional_funds_capital_repair_2027",
+    "created_date",
+    "directory_inn_id",
+    "row_index",
+    "EditActions1",
+    "customColumn1"
+  ],
+  "columnUpdatedAt": 1742777976615,
+  "columnWidthMap": {
+    "EditActions1": 207,
+    "additional_demand": 132,
+    "additional_funds_capital_repair_2025": 540,
+    "additional_funds_capital_repair_2026": 515,
+    "additional_funds_capital_repair_2027": 525,
+    "additional_funds_current_repair_2025": 521,
+    "additional_funds_current_repair_2026": 518,
+    "additional_funds_current_repair_2027": 536,
+    "allocated_funds_capital_repair_2025": 590,
+    "allocated_funds_capital_repair_2026": 552,
+    "allocated_funds_capital_repair_2027": 535,
+    "allocated_funds_current_repair_2025": 520,
+    "allocated_funds_current_repair_2026": 537,
+    "allocated_funds_current_repair_2027": 530,
+    "class_spo": 96,
+    "compliance_status": 438,
+    "course_subject": 246,
+    "created_date": 120,
+    "customColumn1": 145,
+    "demand_reason": 244.75,
+    "directory_inn_id": 110,
+    "inspection_orders": 452,
+    "non_compliance_details": 863,
+    "object_address": 570,
+    "object_address_id": 471,
+    "planned_year_of_implementation": 556,
+    "projected_student_count": 123,
+    "row_index": 161,
+    "row_num": 134,
+    "student_count_2024_2025": 129,
+    "textbooks_in_stock": 134,
+    "total_sanitary_units": 259,
+    "units_needing_repair": 358,
+    "work_description": 498
+  },
+  "compactMode": "TALL",
+  "customIsLoading": false,
+  "customIsLoadingValue": "",
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": "",
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "cellBackground"
+    },
+    {
+      "key": "primaryColumns.total_sanitary_units.computedValue"
+    },
+    {
+      "key": "primaryColumns.compliance_status.computedValue"
+    },
+    {
+      "key": "primaryColumns.non_compliance_details.computedValue"
+    },
+    {
+      "key": "primaryColumns.inspection_orders.computedValue"
+    },
+    {
+      "key": "primaryColumns.units_needing_repair.computedValue"
+    },
+    {
+      "key": "primaryColumns.work_description.computedValue"
+    },
+    {
+      "key": "primaryColumns.planned_year_of_implementation.computedValue"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2025.computedValue"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2026.computedValue"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2027.computedValue"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair_2025.computedValue"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair_2026.computedValue"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair_2027.computedValue"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair_2025.computedValue"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair_2026.computedValue"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair_2027.computedValue"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair_2025.computedValue"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair_2026.computedValue"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair_2027.computedValue"
+    },
+    {
+      "key": "primaryColumns.created_date.computedValue"
+    },
+    {
+      "key": "primaryColumns.directory_inn_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.row_index.computedValue"
+    },
+    {
+      "key": "primaryColumns.compliance_status.selectOptions"
+    },
+    {
+      "key": "primaryColumns.inspection_orders.selectOptions"
+    },
+    {
+      "key": "primaryColumns.planned_year_of_implementation.selectOptions"
+    },
+    {
+      "key": "primaryColumns.EditActions1.saveBorderRadius"
+    },
+    {
+      "key": "primaryColumns.EditActions1.discardBorderRadius"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isSaveDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.object_address_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.object_address_id.selectOptions"
+    },
+    {
+      "key": "primaryColumns.row_num.computedValue"
+    },
+    {
+      "key": "primaryColumns.compliance_status.newRowSelectOptions"
+    },
+    {
+      "key": "primaryColumns.inspection_orders.newRowSelectOptions"
+    },
+    {
+      "key": "primaryColumns.object_address_id.newRowSelectOptions"
+    },
+    {
+      "key": "primaryColumns.planned_year_of_implementation.newRowSelectOptions"
+    },
+    {
+      "key": "primaryColumns.customColumn1.computedValue"
+    },
+    {
+      "key": "primaryColumns.EditActions1.saveButtonColor"
+    },
+    {
+      "key": "primaryColumns.total_sanitary_units.cellBackground"
+    },
+    {
+      "key": "primaryColumns.compliance_status.cellBackground"
+    },
+    {
+      "key": "primaryColumns.non_compliance_details.cellBackground"
+    },
+    {
+      "key": "primaryColumns.inspection_orders.cellBackground"
+    },
+    {
+      "key": "primaryColumns.units_needing_repair.cellBackground"
+    },
+    {
+      "key": "primaryColumns.work_description.cellBackground"
+    },
+    {
+      "key": "primaryColumns.planned_year_of_implementation.cellBackground"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2025.cellBackground"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2026.cellBackground"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2027.cellBackground"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair_2025.cellBackground"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair_2026.cellBackground"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair_2027.cellBackground"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair_2025.cellBackground"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair_2026.cellBackground"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair_2027.cellBackground"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair_2025.cellBackground"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair_2026.cellBackground"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair_2027.cellBackground"
+    },
+    {
+      "key": "primaryColumns.created_date.cellBackground"
+    },
+    {
+      "key": "primaryColumns.directory_inn_id.cellBackground"
+    },
+    {
+      "key": "primaryColumns.row_index.cellBackground"
+    },
+    {
+      "key": "primaryColumns.EditActions1.cellBackground"
+    },
+    {
+      "key": "primaryColumns.object_address_id.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn1.cellBackground"
+    },
+    {
+      "key": "primaryColumns.row_num.cellBackground"
+    },
+    {
+      "key": "primaryColumns.total_sanitary_units.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.compliance_status.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.non_compliance_details.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.inspection_orders.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.units_needing_repair.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.work_description.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.object_address_id.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.planned_year_of_implementation.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2025.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2026.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2027.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair_2025.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair_2027.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair_2026.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair_2025.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair_2027.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair_2026.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair_2025.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair_2027.isCellEditable"
+    },
+    {
+      "key": "allowAddNewRow"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair_2026.isCellEditable"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "cellBackground"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isSaveDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.total_sanitary_units.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.compliance_status.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.non_compliance_details.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.inspection_orders.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.units_needing_repair.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.work_description.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.object_address_id.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.planned_year_of_implementation.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2025.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2026.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2027.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair_2025.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair_2027.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair_2026.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair_2025.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair_2027.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair_2026.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair_2025.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair_2027.isCellEditable"
+    },
+    {
+      "key": "allowAddNewRow"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isSaveVisible"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair_2026.isCellEditable"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onAddNewRowSave"
+    },
+    {
+      "key": "primaryColumns.EditActions1.onSave"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.compliance_status.onOptionChange"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "flexVerticalAlignment": "start",
+  "fontStyle": "BOLD",
+  "horizontalAlignment": "CENTER",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": false,
+  "isVisiblePagination": false,
+  "isVisibleSearch": false,
+  "key": "avytj7i2nj",
+  "label": "Data",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 9,
+  "multiRowSelection": false,
+  "needsErrorInfo": false,
+  "onAddNewRowSave": "{{form_1_insert_new_row.run().then(() => {\n  form_1_sql_data.run();\n});}}",
+  "parentColumnSpace": 14.00299072265625,
+  "parentId": "o5iuxwrnrp",
+  "parentRowSpace": 10,
+  "primaryColumnId": "row_index",
+  "primaryColumns": {
+    "EditActions1": {
+      "alias": "EditActions1",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "editActions",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "discardActionIconName": "disable",
+      "discardActionLabel": "Нет",
+      "discardBorderRadius": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "discardButtonColor": "#F22B2B",
+      "discardButtonVariant": "TERTIARY",
+      "discardIconAlign": "left",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "EditActions1",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardDisabled": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( !table_appendix_1.updatedRowIndices.includes(currentIndex)))}}",
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveDisabled": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( !table_appendix_1.updatedRowIndices.includes(currentIndex)))}}",
+      "isSaveVisible": "true",
+      "isVisible": true,
+      "label": "Сохранить изменения",
+      "notation": "standard",
+      "onSave": "{{form_1_update_edit_row.run().then(() => {\n  form_1_sql_data.run();\n});}}",
+      "originalId": "EditActions1",
+      "saveActionIconName": "saved",
+      "saveActionLabel": "Да",
+      "saveBorderRadius": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "saveButtonColor": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "saveIconAlign": "left",
+      "sticky": "right",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "width": 150
+    },
+    "additional_funds_capital_repair_2025": {
+      "alias": "additional_funds_capital_repair_2025",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"additional_funds_capital_repair_2025\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "additional_funds_capital_repair_2025",
+      "index": 17,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "2025 г. - Доп. потребность в фин-и в рамках кап. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "additional_funds_capital_repair_2025",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "additional_funds_capital_repair_2026": {
+      "alias": "additional_funds_capital_repair_2026",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"additional_funds_capital_repair_2026\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "additional_funds_capital_repair_2026",
+      "index": 18,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "2026 г. - Доп. потребность в фин-и в рамках кап. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "additional_funds_capital_repair_2026",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "additional_funds_capital_repair_2027": {
+      "alias": "additional_funds_capital_repair_2027",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"additional_funds_capital_repair_2027\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "additional_funds_capital_repair_2027",
+      "index": 19,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "2027 г. - Доп. потребность в фин-и в рамках кап. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "additional_funds_capital_repair_2027",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "additional_funds_current_repair_2025": {
+      "alias": "additional_funds_current_repair_2025",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"additional_funds_current_repair_2025\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "additional_funds_current_repair_2025",
+      "index": 14,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "2025 г. - Доп. потребность в фин-и в рамках тек. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "additional_funds_current_repair_2025",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "additional_funds_current_repair_2026": {
+      "alias": "additional_funds_current_repair_2026",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"additional_funds_current_repair_2026\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "additional_funds_current_repair_2026",
+      "index": 15,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "2026 г. - Доп. потребность в фин-и в рамках тек. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "additional_funds_current_repair_2026",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "additional_funds_current_repair_2027": {
+      "alias": "additional_funds_current_repair_2027",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"additional_funds_current_repair_2027\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "additional_funds_current_repair_2027",
+      "index": 16,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "2027 г. - Доп. потребность в фин-и в рамках тек. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "additional_funds_current_repair_2027",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "allocated_funds_capital_repair_2025": {
+      "alias": "allocated_funds_capital_repair_2025",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"allocated_funds_capital_repair_2025\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "allocated_funds_capital_repair_2025",
+      "index": 11,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "2025 г. - Объем доведенного фин-я в рамках капитального ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "allocated_funds_capital_repair_2025",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "allocated_funds_capital_repair_2026": {
+      "alias": "allocated_funds_capital_repair_2026",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"allocated_funds_capital_repair_2026\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "allocated_funds_capital_repair_2026",
+      "index": 12,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "2026 г. - Объем предусмотр. фин-я в рамках кап. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "allocated_funds_capital_repair_2026",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "allocated_funds_capital_repair_2027": {
+      "alias": "allocated_funds_capital_repair_2027",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"allocated_funds_capital_repair_2027\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "allocated_funds_capital_repair_2027",
+      "index": 13,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "2027 г. - Объем предусмотр. фин-я в рамках кап. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "allocated_funds_capital_repair_2027",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "allocated_funds_current_repair_2025": {
+      "alias": "allocated_funds_current_repair_2025",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"allocated_funds_current_repair_2025\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "allocated_funds_current_repair_2025",
+      "index": 8,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "2025 г. - Объем доведенного фин-я в рамках тек. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "allocated_funds_current_repair_2025",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "allocated_funds_current_repair_2026": {
+      "alias": "allocated_funds_current_repair_2026",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"allocated_funds_current_repair_2026\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "allocated_funds_current_repair_2026",
+      "index": 9,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "2026 г. - Объем предусмотр. фин-я в рамках тек. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "allocated_funds_current_repair_2026",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "allocated_funds_current_repair_2027": {
+      "alias": "allocated_funds_current_repair_2027",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"allocated_funds_current_repair_2027\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "LEFT",
+      "id": "allocated_funds_current_repair_2027",
+      "index": 10,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "2027 г. - Объем предусмотр. фин-я в рамках тек. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "allocated_funds_current_repair_2027",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "compliance_status": {
+      "alias": "compliance_status",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": false,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "select",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  currentRow['compliance_status'] === 'null' || currentRow['compliance_status'] === null \n    ? \"\" \n    : `${currentRow['compliance_status']}`\n))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "compliance_status",
+      "index": 1,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Тех.состояние санузлов соответствует СП 2.4.3648-20",
+      "newRowSelectOptions": "{{[\n\t{\"label\": \"\", \"value\": ''},\n\t{\"label\": \"Соответствует\", \"value\": 'true'},\n\t{\"label\": \"Не соответствует\", \"value\": 'false'}\n]}}",
+      "notation": "standard",
+      "onOptionChange": "",
+      "originalId": "compliance_status",
+      "placeholderText": "Соответствует/Не соответствует",
+      "selectOptions": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( [\n\t{\"label\": \"\", \"value\": ''},\n\t{\"label\": \"Соответствует\", \"value\": 'true'},\n\t{\"label\": \"Не соответствует\", \"value\": 'false'}\n]))}}",
+      "sortBy": "value",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "created_date": {
+      "alias": "created_date",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "text",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_date\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "created_date",
+      "index": 20,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "created_date",
+      "notation": "standard",
+      "originalId": "created_date",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonColor": "#b91c1c",
+      "buttonLabel": "Удалить строку",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "PRIMARY",
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "button",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( 'Удалить'))}}",
+      "configureMenuItems": {
+        "config": {
+          "id": "config",
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Menu Item"
+        },
+        "id": "config",
+        "label": "Configure menu items"
+      },
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "LEFT",
+      "iconName": "delete",
+      "id": "customColumn1",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "",
+      "labelColor": "#FFFFFF",
+      "menuButtonLabel": "Удалить строку",
+      "menuButtoniconName": "delete",
+      "menuItemsSource": "STATIC",
+      "notation": "standard",
+      "onClick": "{{\nstoreValue('work_table', 'edu_object_state_appendix_1')\nshowModal(delete_row_modal.name);}}",
+      "originalId": "customColumn1",
+      "sourceData": [],
+      "sticky": "right",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "directory_inn_id": {
+      "alias": "directory_inn_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "text",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"directory_inn_id\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "directory_inn_id",
+      "index": 21,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "directory_inn_id",
+      "notation": "standard",
+      "originalId": "directory_inn_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "inspection_orders": {
+      "alias": "inspection_orders",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": false,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "select",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  currentRow['inspection_orders'] === 'null' || currentRow['inspection_orders'] === null \n    ? \"\" \n    : `${currentRow['inspection_orders']}`\n))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "inspection_orders",
+      "index": 3,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Наличие предписаний на проведение ремонта (да/нет)",
+      "newRowSelectOptions": "{{[\n\t\t{\"label\": \"\", \"value\": ''},\n\t{\"label\": \"Да\", \"value\": 'true'},\n\t{\"label\": \"Нет\", \"value\": 'false'}\n]}}",
+      "notation": "standard",
+      "originalId": "inspection_orders",
+      "placeholderText": "Да/Нет",
+      "selectOptions": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( [\n\t\t{\"label\": \"\", \"value\": ''},\n\t{\"label\": \"Да\", \"value\": 'true'},\n\t{\"label\": \"Нет\", \"value\": 'false'}\n]))}}",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "non_compliance_details": {
+      "alias": "non_compliance_details",
+      "allowCellWrapping": true,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "text",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"non_compliance_details\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "non_compliance_details",
+      "index": 2,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Оценка тех. состояния санузлов  на предмет соответствия СП 2.4.3648-20 (в случае несоотв-ия указать нарушения)",
+      "notation": "standard",
+      "originalId": "non_compliance_details",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "object_address_id": {
+      "alias": "object_address_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": false,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "select",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"object_address_id\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "object_address_id",
+      "index": 6,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Адрес объекта, где расположены санузлы, треб. ремонта",
+      "newRowSelectOptions": "{{\n// Берем два столбца из исходных данных, удаляем дубликаты и сортируем по label\nlsfusion_obj.data\n  .filter(function(item, index, self) {\n    // Удаляем дубликаты на основе \"Адрес объекта\" и \"key0 Объекта\"\n    return (\n      index ===\n      self.findIndex(function(other) {\n        return other[\"Адрес объекта\"] === item[\"Адрес объекта\"] && other[\"key0 Объекта\"] === item[\"key0 Объекта\"];\n      })\n    );\n  })\n  .map(function(item) {\n    // Преобразуем данные в формат { label, value }\n    return {\n      label: item[\"Адрес объекта\"], // Используем адрес как label\n      value: item[\"key0 Объекта\"]   // Используем key0 Объекта как value\n    };\n  })\n  .sort(function(a, b) {\n    // Сортируем по label (алфавитный порядок)\n    return a.label.localeCompare(b.label);\n  })\n}}",
+      "notation": "standard",
+      "originalId": "object_address_id",
+      "placeholderText": "Укажите адрес объекта",
+      "selectOptions": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n// Берем два столбца из исходных данных, удаляем дубликаты и сортируем по label\nlsfusion_obj.data\n  .filter(function(item, index, self) {\n    // Удаляем дубликаты на основе \"Адрес объекта\" и \"key0 Объекта\"\n    return (\n      index ===\n      self.findIndex(function(other) {\n        return other[\"Адрес объекта\"] === item[\"Адрес объекта\"] && other[\"key0 Объекта\"] === item[\"key0 Объекта\"];\n      })\n    );\n  })\n  .map(function(item) {\n    // Преобразуем данные в формат { label, value }\n    return {\n      label: item[\"Адрес объекта\"], // Используем адрес как label\n      value: item[\"key0 Объекта\"]   // Используем key0 Объекта как value\n    };\n  })\n  .sort(function(a, b) {\n    // Сортируем по label (алфавитный порядок)\n    return a.label.localeCompare(b.label);\n  })\n))}}",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "planned_year_of_implementation": {
+      "alias": "planned_year_of_implementation",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": false,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "select",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"planned_year_of_implementation\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "planned_year_of_implementation",
+      "index": 7,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Планируемый год реализации (с учетом разработки ПСД, экспертизы)",
+      "newRowSelectOptions": "{{[\n\t{\"label\": \"\", \"value\": ''},\n\t{\"label\": \"2025\", \"value\": \"2025\"},\n\t{\"label\": \"2026\", \"value\": \"2026\"},\n\t{\"label\": \"2027\", \"value\": \"2027\"},\n]}}",
+      "notation": "standard",
+      "originalId": "planned_year_of_implementation",
+      "placeholderText": "(2025,2026 или 2027 год)",
+      "selectOptions": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( [\n\t{\"label\": \"\", \"value\": ''},\n\t{\"label\": \"2025\", \"value\": \"2025\"},\n\t{\"label\": \"2026\", \"value\": \"2026\"},\n\t{\"label\": \"2027\", \"value\": \"2027\"},\n]))}}",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "row_index": {
+      "alias": "row_index",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "text",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_index\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "row_index",
+      "index": 22,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "row_index",
+      "notation": "standard",
+      "originalId": "row_index",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "row_num": {
+      "alias": "row_num",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "number",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_num\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "row_num",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "№ п\\п",
+      "notation": "standard",
+      "originalId": "row_num",
+      "sticky": "left",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "total_sanitary_units": {
+      "alias": "total_sanitary_units",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "number",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"total_sanitary_units\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "total_sanitary_units",
+      "index": 0,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Общее количество санузлов",
+      "notation": "standard",
+      "originalId": "total_sanitary_units",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "units_needing_repair": {
+      "alias": "units_needing_repair",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "number",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"units_needing_repair\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "units_needing_repair",
+      "index": 4,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Кол-во санузлов, требующих ремонта",
+      "notation": "standard",
+      "originalId": "units_needing_repair",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "work_description": {
+      "alias": "work_description",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "text",
+      "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"work_description\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "work_description",
+      "index": 5,
+      "isCellEditable": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Наименование работ",
+      "notation": "standard",
+      "originalId": "work_description",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchKey": "",
+  "serverSidePaginationEnabled": true,
+  "showInlineEditingOptionDropdown": true,
+  "tableData": "{{form_1_sql_data.data}}",
+  "textSize": "0.875rem",
+  "topRow": 6,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "variant": "DEFAULT",
+  "version": 2,
+  "verticalAlignment": "CENTER",
+  "widgetId": "zoveq0bra4",
+  "widgetName": "table_appendix_1"
+}

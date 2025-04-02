@@ -1,0 +1,83 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "bottomRowBeforeCollapse": 10,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "optionLabel"
+    },
+    {
+      "key": "optionValue"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{appsmith.store.superuser.group_system_name === 'ko_employee'}}",
+  "key": "0hcsavkv3a",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 40,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 88,
+  "mobileLeftColumn": 5,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 81,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{report_status_last.run();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 10,
+  "originalTopRow": 6,
+  "parentColumnSpace": 30.21875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "ИОГВ",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 56,
+  "serverSideFiltering": false,
+  "sourceData": "{{\n  // Создаем уникальные комбинации label и value\n  [...new Set(report_status_last.data.map(item => JSON.stringify({ label: item[\"ИОГВ\"], value: item[\"ИОГВ ИНН\"] })))]\n    // Преобразуем строки обратно в объекты\n    .map(str => JSON.parse(str))\n    // Сортируем по label (ИОГВ) по алфавиту\n    .sort((a, b) => a.label.localeCompare(b.label))\n}}",
+  "topRow": 6,
+  "topRowBeforeCollapse": 6,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "b8cw2jdlrv",
+  "widgetName": "monitoring_select_iogv"
+}

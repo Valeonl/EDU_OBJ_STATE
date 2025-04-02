@@ -1,0 +1,3 @@
+SELECT "№", "Средства обучения и воспитания", "Предмет", "Обеспеченность" FROM books_monitoring_app.reports
+WHERE "ИНН" = {{appsmith.store.user.login}} AND "№" > 0 
+ORDER BY "ИНН", "Предмет", "№"

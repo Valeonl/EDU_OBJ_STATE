@@ -1,0 +1,38 @@
+WITH latest_status AS (
+    SELECT 
+        rsh."FK ИНН",
+        MAX(rsh."Дата статуса") AS max_date
+    FROM 
+        books_monitoring_app.report_status_history rsh
+    GROUP BY 
+        rsh."FK ИНН"
+)
+SELECT DISTINCT ON (rsh."FK ИНН")
+    di.login AS "ИНН",
+    di.agencyname AS "Наименование учреждения",
+    rs."describe" AS "Статус",
+    rs.system_name AS status_system_name,
+    to_char(rsh."Дата статуса", 'DD.MM.YYYY HH24:MI') AS "Дата",
+    CASE 
+        WHEN rs."describe" IN ('на проверке ИОГВ', 'направлено на проверку') THEN 
+            DATE_PART('day', AGE(CURRENT_DATE, rsh."Дата статуса"::date))
+        ELSE 
+            NULL
+    END AS "Ждет проверки, дн.",
+    rsh."FK ИНН"
+FROM 
+    books_monitoring_app.report_status_history rsh
+LEFT JOIN 
+    access_control.user_auth di ON rsh."FK ИНН" = di.login::bigint
+LEFT JOIN 
+    books_monitoring_app.report_status rs ON rsh."FK Статус" = rs.KEY0
+INNER JOIN 
+    latest_status ls ON rsh."FK ИНН" = ls."FK ИНН" AND rsh."Дата статуса" = ls.max_date
+WHERE 
+    di.is_report_required = true 
+    AND DI.iogv = {{appsmith.store.superuser.login}} 
+    AND ({{monitoring_select_inn.selectedOptionValue ? `di.login::text = '${monitoring_select_inn.selectedOptionValue}'` : 'true'}})
+    AND ({{monitoring_select_name.selectedOptionValue ? `di.agencyname::text = '${monitoring_select_name.selectedOptionValue}'` : 'true'}})
+    AND ({{monitoring_status_filter_selec.selectedOptionValue ? `"describe"::text = '${monitoring_status_filter_selec.selectedOptionValue}'` : 'true'}})
+ORDER BY 
+    rsh."FK ИНН", rsh."Дата статуса" DESC;

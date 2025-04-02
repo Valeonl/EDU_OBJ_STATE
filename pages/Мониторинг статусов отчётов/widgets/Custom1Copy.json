@@ -1,0 +1,58 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 116,
+  "boxShadow": "none",
+  "defaultModel": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "events": [],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "739qixasvr",
+  "leftColumn": 6,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 108,
+  "mobileLeftColumn": 19,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 78,
+  "needsErrorInfo": false,
+  "originalBottomRow": 116,
+  "originalTopRow": 103,
+  "parentColumnSpace": 26.609375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": "@charset \"UTF-8\";\n/* Убедитесь, что стили не конфликтуют с глобальными */\n#epsilon-status-widget.status-widget {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 8px;\n  padding: 8px;\n  background-color: #f9f9f9;\n  border-radius: 8px;\n  overflow: hidden; /* Убираем скроллинг */\n  box-sizing: border-box;\n  width: 100%; /* Растягиваем на всю ширину */\n  min-height: 100px; /* Минимальная высота */\n}\n\n#epsilon-status-widget .status-item {\n  flex: 1 1 calc(33.333% - 16px);\n  min-width: 120px;\n  max-width: calc(50% - 8px);\n  padding: 12px;\n  text-align: center;\n  border-radius: 4px;\n  font-size: 14px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n  box-sizing: border-box;\n}\n\n/* Адаптация для маленьких экранов */\n@media (max-width: 600px) {\n  #epsilon-status-widget .status-item {\n    flex: 1 1 calc(50% - 8px);\n    max-width: calc(50% - 8px);\n  }\n}\n@media (max-width: 400px) {\n  #epsilon-status-widget .status-item {\n    flex: 1 1 100%;\n    max-width: 100%;\n  }\n}",
+    "html": "<div id=\"epsilon-status-widget\" class=\"status-widget\">\n  <div class=\"status-item\" style=\"background-color: #ffffff; color: #6b6e70;\">в работе ОУ</div>\n  <div class=\"status-item\" style=\"background-color: #ffdab9; color: #6b6e70;\">направлено на проверку</div>\n  <div class=\"status-item\" style=\"background-color: #e1e3f5; color: #6b6e70;\">на проверке ИОГВ</div>\n  <div class=\"status-item\" style=\"background-color: #ffe5ec; color: #6b6e70;\">возвращено на доработку</div>\n  <div class=\"status-item\" style=\"background-color: #d6eadf; color: #6b6e70;\">утверждено</div>\n  <div class=\"status-item\" style=\"background-color: grey; color: white;\">Ещё не приступали</div>\n</div>\n",
+    "js": ""
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 103,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "/* Убедитесь, что стили не конфликтуют с глобальными */\n  #epsilon-status-widget.status-widget {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 8px;\n    padding: 8px;\n    background-color: #f9f9f9;\n    border-radius: 8px;\n    overflow: hidden; /* Убираем скроллинг */\n    box-sizing: border-box;\n    width: 100%; /* Растягиваем на всю ширину */\n    min-height: 100px; /* Минимальная высота */\n  }\n\n  #epsilon-status-widget .status-item {\n    flex: 1 1 calc(33.333% - 16px);\n    min-width: 120px;\n    max-width: calc(50% - 8px);\n    padding: 12px;\n    text-align: center;\n    border-radius: 4px;\n    font-size: 14px;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n    box-sizing: border-box;\n  }\n\n  /* Адаптация для маленьких экранов */\n  @media (max-width: 600px) {\n    #epsilon-status-widget .status-item {\n      flex: 1 1 calc(50% - 8px);\n      max-width: calc(50% - 8px);\n    }\n  }\n\n  @media (max-width: 400px) {\n    #epsilon-status-widget .status-item {\n      flex: 1 1 100%;\n      max-width: 100%;\n    }\n  }",
+    "html": "<div id=\"epsilon-status-widget\" class=\"status-widget\">\n  <div class=\"status-item\" style=\"background-color: #ffffff; color: #6b6e70;\">в работе ОУ</div>\n  <div class=\"status-item\" style=\"background-color: #ffdab9; color: #6b6e70;\">направлено на проверку</div>\n  <div class=\"status-item\" style=\"background-color: #e1e3f5; color: #6b6e70;\">на проверке ИОГВ</div>\n  <div class=\"status-item\" style=\"background-color: #ffe5ec; color: #6b6e70;\">возвращено на доработку</div>\n  <div class=\"status-item\" style=\"background-color: #d6eadf; color: #6b6e70;\">утверждено</div>\n  <div class=\"status-item\" style=\"background-color: grey; color: white;\">Ещё не приступали</div>\n</div>\n",
+    "js": ""
+  },
+  "version": 1,
+  "widgetId": "bvvkiycton",
+  "widgetName": "Custom1Copy"
+}

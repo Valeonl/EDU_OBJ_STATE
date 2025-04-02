@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "679c9f7758291b51e15c9b3a_407ca752-ef86-4397-b7be-27fc929b7cf9",
+  "id": "Мониторинг статусов отчётов_btn_cancel_download",
+  "unpublishedCollection": {
+    "name": "btn_cancel_download",
+    "pageId": "Мониторинг статусов отчётов",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

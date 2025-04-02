@@ -1,0 +1,4 @@
+SELECT *
+FROM appsmith.status
+--WHERE system_name IN ('under_iogv_review', 'returned_for_revision', 'approved')
+ORDER BY status_id

@@ -1,0 +1,3 @@
+SELECT row_number() OVER () AS row_number, iogv_short_name, ou_short_name, ou_address, total_food_blocks_in_poor_condition, obj_address, allocated_funds_current_repair, allocated_funds_capital_repair, additional_funds_current_repair, additional_funds_capital_repair
+	FROM appsmith.edu_object_state_appendix_4_view
+WHERE ({{ appsmith.store.superuser.group_system_name === 'ko_employee' ? 'true'  : `iogv_inn = '${appsmith.store.superuser.ou_inn}'`}})

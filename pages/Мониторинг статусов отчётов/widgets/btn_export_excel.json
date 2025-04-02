@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 129,
+  "bottomRowBeforeCollapse": 129,
+  "boxShadow": "none",
+  "buttonColor": "#15803d",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "cloud-download",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": false,
+  "key": "ejgruosr50",
+  "leftColumn": 46,
+  "minWidth": 120,
+  "mobileBottomRow": 98,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 94,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(modal_download_type_ras.name);}}",
+  "originalBottomRow": 129,
+  "originalTopRow": 125,
+  "parentColumnSpace": 16.6875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 61,
+  "text": "Скачать расшифровку",
+  "topRow": 125,
+  "topRowBeforeCollapse": 125,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "hew8rezwze",
+  "widgetName": "btn_export_excel"
+}

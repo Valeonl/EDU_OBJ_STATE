@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6791298af5b17f4ec0cc8d73_178c660d-4bfd-4abc-be25-c15fac48f871",
+  "id": "Мониторинг статусов отчётов_auth_check",
+  "unpublishedCollection": {
+    "name": "auth_check",
+    "pageId": "Мониторинг статусов отчётов",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

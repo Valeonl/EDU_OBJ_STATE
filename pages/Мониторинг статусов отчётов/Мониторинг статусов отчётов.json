@@ -1,0 +1,33 @@
+{
+  "gitSyncId": "6790a0cc8b895701c38ce700_56a12d3a-e37e-4df8-ac80-c8a29f053c5f",
+  "unpublishedPage": {
+    "customSlug": "monitoring",
+    "isHidden": true,
+    "layouts": [
+      {
+        "dsl": {
+          "backgroundColor": "none",
+          "bottomRow": 1290,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "minHeight": 760,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 74,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 91,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
+      }
+    ],
+    "name": "Мониторинг статусов отчётов",
+    "slug": ""
+  }
+}

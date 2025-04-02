@@ -1,0 +1,700 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 95,
+  "boxShadow": "none",
+  "canFreezeColumn": true,
+  "cellBackground": "\n",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "customColumn4",
+    "xn__e0aboy",
+    "xn__k0aka",
+    "xn____4rb1dajodcbbjrdg3crchi0cxdyeuj",
+    "xn__t0a4azccbg",
+    "xn__g0a0da5e",
+    "xn______68c5lkedc4av4bfnpd1a_",
+    "customColumn5",
+    "customColumn3",
+    "status_system_name",
+    "directory_inn_id",
+    "xn____irbctd4aac"
+  ],
+  "columnUpdatedAt": 1743061758807,
+  "columnWidthMap": {
+    "customColumn1": 70,
+    "customColumn4": 107,
+    "customColumn5": 149,
+    "xn____4rb1dajodcbbjrdg3crchi0cxdyeuj": 597,
+    "xn______68c5lkedc4av4bfnpd1a_": 182,
+    "xn__g0a0da5e": 155,
+    "xn__k0aka": 106,
+    "xn__t0a4azccbg": 200
+  },
+  "compactMode": "SHORT",
+  "defaultPageSize": 0,
+  "defaultSearchText": "",
+  "defaultSelectedRowIndex": "0",
+  "defaultSelectedRowIndices": "[\n  \n]",
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.xn__k0aka.computedValue"
+    },
+    {
+      "key": "primaryColumns.xn____4rb1dajodcbbjrdg3crchi0cxdyeuj.computedValue"
+    },
+    {
+      "key": "primaryColumns.xn__t0a4azccbg.computedValue"
+    },
+    {
+      "key": "primaryColumns.xn__g0a0da5e.computedValue"
+    },
+    {
+      "key": "primaryColumns.xn______68c5lkedc4av4bfnpd1a_.computedValue"
+    },
+    {
+      "key": "primaryColumns.xn__k0aka.cellBackground"
+    },
+    {
+      "key": "primaryColumns.xn____4rb1dajodcbbjrdg3crchi0cxdyeuj.cellBackground"
+    },
+    {
+      "key": "primaryColumns.xn__t0a4azccbg.cellBackground"
+    },
+    {
+      "key": "primaryColumns.xn__g0a0da5e.cellBackground"
+    },
+    {
+      "key": "primaryColumns.xn______68c5lkedc4av4bfnpd1a_.cellBackground"
+    },
+    {
+      "key": "primaryColumns.xn______68c5lkedc4av4bfnpd1a_.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn3.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.status_system_name.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn4.iconName"
+    },
+    {
+      "key": "primaryColumns.customColumn4.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn4.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.directory_inn_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn5.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.customColumn5.buttonColor"
+    },
+    {
+      "key": "primaryColumns.xn____irbctd4aac.computedValue"
+    },
+    {
+      "key": "primaryColumns.xn__e0aboy.computedValue"
+    },
+    {
+      "key": "primaryColumns.xn__e0aboy.isCellVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.xn__k0aka.cellBackground"
+    },
+    {
+      "key": "primaryColumns.xn____4rb1dajodcbbjrdg3crchi0cxdyeuj.cellBackground"
+    },
+    {
+      "key": "primaryColumns.xn__t0a4azccbg.cellBackground"
+    },
+    {
+      "key": "primaryColumns.xn__g0a0da5e.cellBackground"
+    },
+    {
+      "key": "primaryColumns.xn______68c5lkedc4av4bfnpd1a_.cellBackground"
+    },
+    {
+      "key": "primaryColumns.xn__g0a0da5e.outputFormat"
+    },
+    {
+      "key": "primaryColumns.xn______68c5lkedc4av4bfnpd1a_.isCellVisible"
+    },
+    {
+      "key": "textSize"
+    },
+    {
+      "key": "primaryColumns.xn__k0aka.textSize"
+    },
+    {
+      "key": "primaryColumns.customColumn3.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn3.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn3.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn4.iconName"
+    },
+    {
+      "key": "primaryColumns.customColumn4.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn4.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn5.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn5.buttonColor"
+    },
+    {
+      "key": "primaryColumns.xn__e0aboy.isCellVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.customColumn3.menuItems.menuItemx45wp62shs.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn3.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn4.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn5.onClick"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "flexVerticalAlignment": "start",
+  "horizontalAlignment": "CENTER",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "isLoading": false,
+  "isSortable": false,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": false,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "1qps8dg10c",
+  "label": "Data",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 101,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 73,
+  "multiRowSelection": true,
+  "needsErrorInfo": false,
+  "originalBottomRow": 92,
+  "originalTopRow": 11,
+  "parentColumnSpace": 26.609375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumnId": "xn__k0aka",
+  "primaryColumns": {
+    "customColumn3": {
+      "alias": "",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonColor": "#a16207",
+      "buttonLabel": "Проверить",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "PRIMARY",
+      "cellBackground": "none",
+      "columnType": "button",
+      "computedValue": "",
+      "configureMenuItems": {
+        "config": {
+          "id": "config",
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Menu Item"
+        },
+        "id": "config",
+        "label": "Configure menu items"
+      },
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "iconName": "eye-open",
+      "id": "customColumn3",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => (   \n (currentRow[\"status_system_name\"] === 'sent_for_review' || currentRow[\"status_system_name\"]=== 'under_iogv_review')\n    ? true\n    : false\n))}}",
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "",
+      "labelColor": "#FFFFFF",
+      "menuButtonLabel": "Проверить отчёт",
+      "menuButtoniconName": "eye-open",
+      "menuItems": {
+        "menuItemx45wp62shs": {
+          "id": "menuItemx45wp62shs",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Menu Item",
+          "onClick": "{{showAlert('----', '');}}",
+          "widgetId": "420rdjumgf"
+        }
+      },
+      "menuItemsSource": "STATIC",
+      "notation": "standard",
+      "onClick": "{{\n  (async () => {\n    try {\n\t  const directory_inn_id = currentRow[\"directory_inn_id\"];\n\t\t// Выполняем запрос для получения пользователя\n\t\tconst [user] = await report_review_inn.run({\n\t\t\t\"directory_inn_id\": directory_inn_id\n\t\t}).catch((error) => {\n\t\t\tthrow new Error(`Ошибка при выполнении запроса: ${error.message}`);\n\t\t});\n\n      // Проверяем, получен ли пользователь\n      if (!user) {\n        throw new Error(\"Пользователь не найден\");\n      }\n\n      // Выполняем запрос under_iogv_review\n      await under_iogv_review.run({\n        directory_inn_id: user.ou_id, comment: 'Начал проверку отчёта'}).catch((error) => {\n        throw new Error(`Ошибка при выполнении запроса under_iogv_review: ${error.message}`);\n      });\n\n      // Сохраняем пользователя в store\n      await storeValue(\"user\", user);\n\n      // Перенаправляем на страницу \"Отчёт\"\n      navigateTo('Отчёт');\n    } catch (error) {\n      console.error(\"Произошла ошибка:\", error);\n      showAlert(error.message, \"error\"); // Показываем сообщение об ошибке\n    }\n  })();\n}}",
+      "originalId": "customColumn3",
+      "sourceData": [],
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn4": {
+      "alias": "",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonLabel": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => (     (currentRow[\"status_system_name\"] === 'excluded')\n    ? 'Вернуть'\n    : 'Исключить'\n))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "cellBackground": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status_system_name\"] === \"excluded\" \n    ? \"#696969\" \n    : \"#dbf6ff\"\n))}}",
+      "columnType": "button",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => (     (currentRow[\"status_system_name\"] === 'excluded')\n    ? 'image-rotate-left'\n    : 'eraser'\n))}}",
+      "id": "customColumn4",
+      "index": 8,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{currentRow['status_system_name'] !== 'excluded' ? (\nstoreValue('excluded_ou', currentRow).then(() => {\n  showModal(exclude_modal.name);})\n) : \nstoreValue('return_from_exclud_ou', currentRow).then(() => {\n  (Promise.all([     return_from_excluded.run({\n\t\"directory_inn_id\": currentRow[\"directory_inn_id\"]\n}),\n\t\t\t\t\t\t\t report_status_last.run()\n\t\t\t\t\t\t\t])\n.then(() => {\n\tconsole.log('Все запросы успешно выполнены');\n\t\t\n\tshowAlert(`Отчёт по учреждению ${appsmith.store.return_from_exclud_ou[\"Наименование учреждения\"]}\n\t(ИНН: ${appsmith.store.return_from_exclud_ou[\"ИНН\"]}) возвращён в работу`);\n\tcloseModal(exclude_modal.name);\n})\n.catch((error) => {\n\tconsole.error('Ошибка при выполнении запросов:', error);\n\tshowAlert(`Ошибка: ${error.message}`, 'error');\n}));})\n}}\n",
+      "originalId": "customColumn4",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn5": {
+      "alias": "",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "0.375rem",
+      "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+      "buttonColor": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => (     (currentRow[\"status_system_name\"] === 'never_login')\n    ? '#1C5A9C'\n    : 'black'\n))}}",
+      "buttonLabel": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => (     (currentRow[\"status_system_name\"] === 'never_login')\n    ? 'Заполнить за ОУ'\n    : 'Просмотреть'\n))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "TERTIARY",
+      "cellBackground": "white",
+      "columnType": "button",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "customColumn5",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "",
+      "labelColor": "#FFFFFF",
+      "menuItemsSource": "STATIC",
+      "notation": "standard",
+      "onClick": "{{(async () => {\n\ttry {\n\t  const directory_inn_id = currentRow[\"directory_inn_id\"];\n\t\tconst status = currentRow[\"status_system_name\"];\n\t\tconsole.log(directory_inn_id)\n\t\t// Выполняем запрос для получения пользователя\n\t\tconst [user] = await report_review_inn.run({\n\t\t\t\"directory_inn_id\": directory_inn_id\n\t\t}).catch((error) => {\n\t\t\tthrow new Error(`Ошибка при выполнении запроса: ${error.message}`);\n\t\t});\n\n\t\t// Проверяем, получен ли пользователь\n\t\tif (!user) {\n\t\t\tthrow new Error(\"Пользователь не найден\");\n\t\t}\n\n\t\t// Проверяем значение в столбце статус\n\t\tif (status === 'never_login') {\n\t\t\tconsole.log('Заполнить за ОУ');\n\t\t\t\n\t\t\t// Если статус true, инициализируем первую запись статуса в report_status_history\n\t\t\tawait login_user_init_first_status.run({\n\t\t\t\tsession_id: appsmith.store.user_session.user_session_id, // ID сессии\n\t\t\t\tou_id: user.ou_id,          // ИНН учреждения\n\t\t\t\treport_system_name: 'edu_object_state' // Системное имя отчета\n\t\t\t});\n\t\t}\n\t\t\n\t\t// Сохраняем пользователя в store\n      await storeValue(\"user\", user);\n\n      // Перенаправляем на страницу \"Отчёт\"\n      navigateTo('Отчёт');\n\t} catch (error) {\n\t\tconsole.error(\"Произошла ошибка:\", error);\n\t\tshowAlert(error.message, \"error\"); // Показываем сообщение об ошибке\n\t}\n})();\n}}",
+      "originalId": "customColumn5",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "directory_inn_id": {
+      "alias": "directory_inn_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "\n",
+      "columnType": "number",
+      "computedValue": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"directory_inn_id\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "directory_inn_id",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "directory_inn_id",
+      "notation": "standard",
+      "originalId": "directory_inn_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "status_system_name": {
+      "alias": "status_system_name",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "\n",
+      "columnType": "text",
+      "computedValue": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status_system_name\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "status_system_name",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "status_system_name",
+      "notation": "standard",
+      "originalId": "status_system_name",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "xn____4rb1dajodcbbjrdg3crchi0cxdyeuj": {
+      "alias": "Наименование учреждения",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( \n currentRow[\"status_system_name\"] === \"excluded\" \n    ? \"#696969\" \n    :  currentRow[\"status_system_name\"] === \"in_work_ou\" \n    ? \"#FFFFFF\" \n    : currentRow[\"status_system_name\"] === \"sent_for_review\"\n    ? \"#ffdab9\"\n    : currentRow[\"status_system_name\"] === \"returned_for_revision\"\n    ? \"#ffe5ec\"\n    : currentRow[\"status_system_name\"] === \"under_iogv_review\"\n    ? \"#e1e3f5\"\n    : currentRow[\"status_system_name\"] === \"approved\"\n    ? \"#d6eadf\"\n    : currentRow[\"status_system_name\"] === \"never_login\"\n    ? \"#dbdbdb\"\n    : currentRow[\"status_system_name\"] === \"send_in_ko\"\n    ? \"#dbf6ff\"  // Новый цвет для статуса \"направлено в КО\"\n    : \"transparent\"\n))}}",
+      "columnType": "text",
+      "computedValue": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Наименование учреждения\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "xn____4rb1dajodcbbjrdg3crchi0cxdyeuj",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Наименование учреждения",
+      "notation": "standard",
+      "originalId": "Наименование учреждения",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "xn______68c5lkedc4av4bfnpd1a_": {
+      "alias": "Ждет проверки, дн.",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => (   \n  currentRow[\"Статус\"] === \"в работе ОУ\" \n    ? \"#FFFFFF\" \n    : currentRow[\"Статус\"] === \"направлено на проверку\"\n    ? \"#ffdab9\"\n    : currentRow[\"Статус\"] === \"возвращено на доработку\"\n    ? \"#ffe5ec\"\n    : currentRow[\"Статус\"] === \"на проверке ИОГВ\"\n    ? \"#e1e3f5\"\n    : currentRow[\"Статус\"] === \"утверждено\"\n    ? \"#d6eadf\"\n    : \"transparent\"\n))}}",
+      "columnType": "number",
+      "computedValue": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Ждет проверки, дн.\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "xn______68c5lkedc4av4bfnpd1a_",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( true))}}",
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "Ждет проверки, дн.",
+      "notation": "standard",
+      "originalId": "Ждет проверки, дн.",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "xn____irbctd4aac": {
+      "alias": "ИОГВ ИНН",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "\n",
+      "columnType": "text",
+      "computedValue": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ИОГВ ИНН\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "xn____irbctd4aac",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "ИОГВ ИНН",
+      "notation": "standard",
+      "originalId": "ИОГВ ИНН",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "xn__e0aboy": {
+      "alias": "ИОГВ",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "\n",
+      "columnType": "text",
+      "computedValue": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ИОГВ\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "xn__e0aboy",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( appsmith.store.superuser.group_system_name === 'ko_employee'))}}",
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ИОГВ",
+      "notation": "standard",
+      "originalId": "ИОГВ",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "xn__g0a0da5e": {
+      "alias": "Дата",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( \n currentRow[\"status_system_name\"] === \"excluded\" \n    ? \"#696969\" \n    :  currentRow[\"status_system_name\"] === \"in_work_ou\" \n    ? \"#FFFFFF\" \n    : currentRow[\"status_system_name\"] === \"sent_for_review\"\n    ? \"#ffdab9\"\n    : currentRow[\"status_system_name\"] === \"returned_for_revision\"\n    ? \"#ffe5ec\"\n    : currentRow[\"status_system_name\"] === \"under_iogv_review\"\n    ? \"#e1e3f5\"\n    : currentRow[\"status_system_name\"] === \"approved\"\n    ? \"#d6eadf\"\n    : currentRow[\"status_system_name\"] === \"never_login\"\n    ? \"#dbdbdb\"\n    : currentRow[\"status_system_name\"] === \"send_in_ko\"\n    ? \"#dbf6ff\"  // Новый цвет для статуса \"направлено в КО\"\n    : \"transparent\"\n))}}",
+      "columnType": "text",
+      "computedValue": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Дата\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "xn__g0a0da5e",
+      "index": 3,
+      "inputFormat": "YYYY-MM-DD",
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Дата",
+      "notation": "standard",
+      "originalId": "Дата",
+      "outputFormat": "DD.MM.YY",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "xn__k0aka": {
+      "alias": "ИНН",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( \n currentRow[\"status_system_name\"] === \"excluded\" \n    ? \"#696969\" \n    :  currentRow[\"status_system_name\"] === \"in_work_ou\" \n    ? \"#FFFFFF\" \n    : currentRow[\"status_system_name\"] === \"sent_for_review\"\n    ? \"#ffdab9\"\n    : currentRow[\"status_system_name\"] === \"returned_for_revision\"\n    ? \"#ffe5ec\"\n    : currentRow[\"status_system_name\"] === \"under_iogv_review\"\n    ? \"#e1e3f5\"\n    : currentRow[\"status_system_name\"] === \"approved\"\n    ? \"#d6eadf\"\n    : currentRow[\"status_system_name\"] === \"never_login\"\n    ? \"#dbdbdb\"\n    : currentRow[\"status_system_name\"] === \"send_in_ko\"\n    ? \"#dbf6ff\"  // Новый цвет для статуса \"направлено в КО\"\n    : \"transparent\"\n))}}",
+      "columnType": "number",
+      "computedValue": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ИНН\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "xn__k0aka",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ИНН",
+      "notation": "standard",
+      "originalId": "ИНН",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "xn__t0a4azccbg": {
+      "alias": "Статус",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( \n currentRow[\"status_system_name\"] === \"excluded\" \n    ? \"#696969\" \n    :  currentRow[\"status_system_name\"] === \"in_work_ou\" \n    ? \"#FFFFFF\" \n    : currentRow[\"status_system_name\"] === \"sent_for_review\"\n    ? \"#ffdab9\"\n    : currentRow[\"status_system_name\"] === \"returned_for_revision\"\n    ? \"#ffe5ec\"\n    : currentRow[\"status_system_name\"] === \"under_iogv_review\"\n    ? \"#e1e3f5\"\n    : currentRow[\"status_system_name\"] === \"approved\"\n    ? \"#d6eadf\"\n    : currentRow[\"status_system_name\"] === \"never_login\"\n    ? \"#dbdbdb\"\n    : currentRow[\"status_system_name\"] === \"send_in_ko\"\n    ? \"#dbf6ff\"  // Новый цвет для статуса \"направлено в КО\"\n    : \"transparent\"\n))}}",
+      "columnType": "text",
+      "computedValue": "{{monitoring_table_last.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Статус\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "xn__t0a4azccbg",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Статус",
+      "notation": "standard",
+      "originalId": "Статус",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchKey": "",
+  "tableData": "{{report_status_last.data}}",
+  "textSize": "0.875rem",
+  "topRow": 12,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "version": 2,
+  "verticalAlignment": "CENTER",
+  "widgetId": "m75hfpne7g",
+  "widgetName": "monitoring_table_last"
+}

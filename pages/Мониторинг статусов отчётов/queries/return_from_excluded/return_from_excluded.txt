@@ -1,0 +1,24 @@
+INSERT INTO appsmith.report_status_history (
+    directory_inn_id,
+    status_id,
+    created_date,
+    session_id,
+    comment,
+    report_id
+)
+VALUES (
+    {{ this.params.directory_inn_id }}, -- Значение directory_inn_id, переданное в параметры
+    (
+        -- Подзапрос для получения значения предыдущего статуса
+        SELECT rs.status_id AS previous_status_id
+        FROM appsmith.report_status_history AS rs
+        WHERE rs.status_id != (SELECT status_id FROM appsmith.status WHERE system_name = 'excluded')
+          AND rs.directory_inn_id = {{ this.params.directory_inn_id }}
+        ORDER BY rs.created_date DESC
+        LIMIT 1
+    ), -- Вставляем значение из SELECT
+    CURRENT_TIMESTAMP, -- Текущее время и дата
+    {{ appsmith.store.user_session.user_session_id}}, -- Отправитель
+    'Исключён через мониторинг', -- Комментарий
+    {{ appsmith.store.selected_report.report_id }} -- ID отчета
+);

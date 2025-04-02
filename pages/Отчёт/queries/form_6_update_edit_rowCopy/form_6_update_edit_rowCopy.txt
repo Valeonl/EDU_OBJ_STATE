@@ -1,0 +1,6 @@
+UPDATE report_data.edu_object_state_appendix_6
+SET 
+    total_sports_halls = {{table_appendix_6.updatedRow.total_sports_halls ? table_appendix_6.updatedRow.total_sports_halls : null }}
+WHERE 
+    directory_inn_id = {{appsmith.store.user.ou_id }}
+    AND row_index = {{table_appendix_6.updatedRow.row_index }}

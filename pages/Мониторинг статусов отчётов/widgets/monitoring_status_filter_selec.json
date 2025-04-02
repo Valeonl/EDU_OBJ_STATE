@@ -1,0 +1,72 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "nw4dtlthl5",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 27,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 34,
+  "mobileLeftColumn": 15,
+  "mobileRightColumn": 35,
+  "mobileTopRow": 27,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{report_status_last.run();}}",
+  "optionLabel": "value",
+  "optionValue": "label",
+  "originalBottomRow": 15,
+  "originalTopRow": 11,
+  "parentColumnSpace": 26.609375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Статус отчёта",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 40,
+  "serverSideFiltering": false,
+  "sourceData": "{{\n  report_status_last.data\n    .reduce((acc, obj) => {\n      if (!acc.some(item => item[\"Статус\"] === obj[\"Статус\"])) {\n        acc.push({ \"Статус\": obj[\"Статус\"] });\n      }\n      return acc;\n    }, [])\n    .map((obj) => ({\n      label: obj[\"Статус\"],\n      value: obj[\"Статус\"]\n    }))\n}}",
+  "topRow": 6,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "yzna14xppm",
+  "widgetName": "monitoring_status_filter_selec"
+}

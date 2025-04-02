@@ -1,0 +1,60 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 103,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{monitoring_table_last.selectedRows.length > 0 ? false : true}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "45v0eyuotk",
+  "leftColumn": 0,
+  "minWidth": 120,
+  "mobileBottomRow": 97,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 12,
+  "mobileTopRow": 93,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(modal_change_status.name);}}",
+  "originalBottomRow": 100,
+  "originalTopRow": 96,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 14,
+  "text": "Изменить статус у выделенного",
+  "topRow": 99,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "swmu59namx",
+  "widgetName": "btn_change_status"
+}

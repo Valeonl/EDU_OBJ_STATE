@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6791298af5b17f4ec0cc8d73_b9648b6b-2106-4189-a754-a6f4ce604340",
+  "id": "Авторизация_input_check",
+  "unpublishedCollection": {
+    "name": "input_check",
+    "pageId": "Авторизация",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

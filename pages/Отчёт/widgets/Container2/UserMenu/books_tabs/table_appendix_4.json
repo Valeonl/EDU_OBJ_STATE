@@ -1,0 +1,833 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowAddNewRow": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n}}",
+  "animateLoading": false,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 67,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "canFreezeColumn": false,
+  "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "row_num",
+    "total_food_blocks_in_poor_condition",
+    "reasons_for_poor_condition",
+    "object_address_id",
+    "allocated_funds_current_repair",
+    "allocated_funds_capital_repair",
+    "additional_funds_current_repair",
+    "additional_funds_capital_repair",
+    "created_date",
+    "directory_inn_id",
+    "row_index",
+    "EditActions1",
+    "customColumn1"
+  ],
+  "columnUpdatedAt": 1742770294088,
+  "columnWidthMap": {
+    "EditActions1": 207,
+    "additional_demand": 132,
+    "additional_funds_capital_repair": 796,
+    "additional_funds_capital_repair_2025": 922,
+    "additional_funds_capital_repair_2026": 927,
+    "additional_funds_capital_repair_2027": 929,
+    "additional_funds_current_repair": 884,
+    "additional_funds_current_repair_2025": 895,
+    "additional_funds_current_repair_2026": 893,
+    "additional_funds_current_repair_2027": 892,
+    "allocated_funds_capital_repair": 426,
+    "allocated_funds_capital_repair_2025": 656,
+    "allocated_funds_capital_repair_2026": 659,
+    "allocated_funds_capital_repair_2027": 666,
+    "allocated_funds_current_repair": 435,
+    "allocated_funds_current_repair_2025": 631,
+    "allocated_funds_current_repair_2026": 646,
+    "allocated_funds_current_repair_2027": 641,
+    "class_spo": 96,
+    "compliance_status": 396,
+    "course_subject": 246,
+    "created_date": 120,
+    "customColumn1": 145,
+    "demand_reason": 244.75,
+    "directory_inn_id": 110,
+    "inspection_orders": 787,
+    "non_compliance_details": 798,
+    "object_address": 570,
+    "object_address_id": 483,
+    "planned_year_of_implementation": 725,
+    "projected_student_count": 123,
+    "row_index": 161,
+    "row_num": 134,
+    "student_count_2024_2025": 129,
+    "textbooks_in_stock": 134,
+    "total_food_blocks": 282,
+    "total_food_blocks_in_poor_condition": 352,
+    "total_sanitary_units": 312,
+    "units_needing_repair": 358,
+    "work_description": 207
+  },
+  "compactMode": "TALL",
+  "customIsLoading": false,
+  "customIsLoadingValue": "",
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": "",
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "cellBackground"
+    },
+    {
+      "key": "primaryColumns.created_date.computedValue"
+    },
+    {
+      "key": "primaryColumns.directory_inn_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.row_index.computedValue"
+    },
+    {
+      "key": "primaryColumns.EditActions1.saveBorderRadius"
+    },
+    {
+      "key": "primaryColumns.EditActions1.discardBorderRadius"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isSaveDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.object_address_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.object_address_id.selectOptions"
+    },
+    {
+      "key": "primaryColumns.row_num.computedValue"
+    },
+    {
+      "key": "primaryColumns.object_address_id.newRowSelectOptions"
+    },
+    {
+      "key": "primaryColumns.customColumn1.computedValue"
+    },
+    {
+      "key": "primaryColumns.EditActions1.saveButtonColor"
+    },
+    {
+      "key": "primaryColumns.total_food_blocks_in_poor_condition.computedValue"
+    },
+    {
+      "key": "primaryColumns.reasons_for_poor_condition.computedValue"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair.computedValue"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair.computedValue"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair.computedValue"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair.computedValue"
+    },
+    {
+      "key": "primaryColumns.created_date.cellBackground"
+    },
+    {
+      "key": "primaryColumns.directory_inn_id.cellBackground"
+    },
+    {
+      "key": "primaryColumns.row_index.cellBackground"
+    },
+    {
+      "key": "primaryColumns.EditActions1.cellBackground"
+    },
+    {
+      "key": "primaryColumns.object_address_id.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn1.cellBackground"
+    },
+    {
+      "key": "primaryColumns.row_num.cellBackground"
+    },
+    {
+      "key": "primaryColumns.total_food_blocks_in_poor_condition.cellBackground"
+    },
+    {
+      "key": "primaryColumns.reasons_for_poor_condition.cellBackground"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair.cellBackground"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair.cellBackground"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair.cellBackground"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair.cellBackground"
+    },
+    {
+      "key": "allowAddNewRow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.object_address_id.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.reasons_for_poor_condition.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.total_food_blocks_in_poor_condition.isCellEditable"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "cellBackground"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isSaveDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.EditActions1.onSave"
+    },
+    {
+      "key": "onAddNewRowSave"
+    },
+    {
+      "key": "allowAddNewRow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.object_address_id.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_capital_repair.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_current_repair.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.additional_funds_capital_repair.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.reasons_for_poor_condition.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.total_food_blocks_in_poor_condition.isCellEditable"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onAddNewRowSave"
+    },
+    {
+      "key": "primaryColumns.EditActions1.onSave"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "flexVerticalAlignment": "start",
+  "fontStyle": "BOLD",
+  "horizontalAlignment": "CENTER",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": false,
+  "isVisiblePagination": false,
+  "isVisibleSearch": false,
+  "key": "avytj7i2nj",
+  "label": "Data",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 9,
+  "multiRowSelection": false,
+  "needsErrorInfo": false,
+  "onAddNewRowSave": "{{form_4_insert_new_row.run().then(() => {\n  form_4_sql_data.run();\n});}}",
+  "parentColumnSpace": 14.00299072265625,
+  "parentId": "arv43y1tef",
+  "parentRowSpace": 10,
+  "primaryColumnId": "row_index",
+  "primaryColumns": {
+    "EditActions1": {
+      "alias": "EditActions1",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "editActions",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "discardActionIconName": "disable",
+      "discardActionLabel": "Нет",
+      "discardBorderRadius": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "discardButtonColor": "#F22B2B",
+      "discardButtonVariant": "TERTIARY",
+      "discardIconAlign": "left",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "EditActions1",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardDisabled": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( !table_appendix_4.updatedRowIndices.includes(currentIndex)))}}",
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveDisabled": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( !table_appendix_4.updatedRowIndices.includes(currentIndex)))}}",
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Сохранить изменения",
+      "notation": "standard",
+      "onSave": "{{form_4_update_edit_row.run().then(() => {\n  form_4_sql_data.run();\n});}}",
+      "originalId": "EditActions1",
+      "saveActionIconName": "saved",
+      "saveActionLabel": "Да",
+      "saveBorderRadius": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "saveButtonColor": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "saveIconAlign": "left",
+      "sticky": "right",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "width": 150
+    },
+    "additional_funds_capital_repair": {
+      "alias": "additional_funds_capital_repair",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"additional_funds_capital_repair\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "LEFT",
+      "id": "additional_funds_capital_repair",
+      "index": 7,
+      "isCellEditable": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Доп. потребность в фин-ии кап. ремонта в неудовл. сост-ии в срок до 01.09.2025, тыс. руб.",
+      "notation": "standard",
+      "originalId": "additional_funds_capital_repair",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "additional_funds_current_repair": {
+      "alias": "additional_funds_current_repair",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"additional_funds_current_repair\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "LEFT",
+      "id": "additional_funds_current_repair",
+      "index": 6,
+      "isCellEditable": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Доп. потребность в фин-ии тек. ремонта пищеблоков в неудовл. сост-ии в срок до 01.09.2025, тыс. руб.",
+      "notation": "standard",
+      "originalId": "additional_funds_current_repair",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "allocated_funds_capital_repair": {
+      "alias": "allocated_funds_capital_repair",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"allocated_funds_capital_repair\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "LEFT",
+      "id": "allocated_funds_capital_repair",
+      "index": 5,
+      "isCellEditable": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Объем выделенного фин-ия кап. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "allocated_funds_capital_repair",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "allocated_funds_current_repair": {
+      "alias": "allocated_funds_current_repair",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "currency",
+      "computedValue": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"allocated_funds_current_repair\"]))}}",
+      "currencyCode": "RUB",
+      "decimals": 1,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "LEFT",
+      "id": "allocated_funds_current_repair",
+      "index": 4,
+      "isCellEditable": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Объем выледенного фин-ия тек. ремонта, тыс. руб.",
+      "notation": "standard",
+      "originalId": "allocated_funds_current_repair",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "created_date": {
+      "alias": "created_date",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "text",
+      "computedValue": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"created_date\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "created_date",
+      "index": 20,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "created_date",
+      "notation": "standard",
+      "originalId": "created_date",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonColor": "#b91c1c",
+      "buttonLabel": "Удалить строку",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "PRIMARY",
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "button",
+      "computedValue": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( 'Удалить'))}}",
+      "configureMenuItems": {
+        "config": {
+          "id": "config",
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Menu Item"
+        },
+        "id": "config",
+        "label": "Configure menu items"
+      },
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "LEFT",
+      "iconName": "delete",
+      "id": "customColumn1",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "",
+      "labelColor": "#FFFFFF",
+      "menuButtonLabel": "Удалить строку",
+      "menuButtoniconName": "delete",
+      "menuItemsSource": "STATIC",
+      "notation": "standard",
+      "onClick": "{{\nstoreValue('work_table', 'edu_object_state_appendix_4')\nshowModal(delete_row_modal.name);}}",
+      "originalId": "customColumn1",
+      "sourceData": [],
+      "sticky": "right",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "directory_inn_id": {
+      "alias": "directory_inn_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "text",
+      "computedValue": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"directory_inn_id\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "directory_inn_id",
+      "index": 21,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "directory_inn_id",
+      "notation": "standard",
+      "originalId": "directory_inn_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "object_address_id": {
+      "alias": "object_address_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": false,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "select",
+      "computedValue": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"object_address_id\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "object_address_id",
+      "index": 6,
+      "isCellEditable": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isFilterable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Адрес объекта, где распол. пищеблоки в неудовл. сост-ии",
+      "newRowSelectOptions": "{{\n// Берем два столбца из исходных данных, удаляем дубликаты и сортируем по label\nlsfusion_obj.data\n  .filter(function(item, index, self) {\n    // Удаляем дубликаты на основе \"Адрес объекта\" и \"key0 Объекта\"\n    return (\n      index ===\n      self.findIndex(function(other) {\n        return other[\"Адрес объекта\"] === item[\"Адрес объекта\"] && other[\"key0 Объекта\"] === item[\"key0 Объекта\"];\n      })\n    );\n  })\n  .map(function(item) {\n    // Преобразуем данные в формат { label, value }\n    return {\n      label: item[\"Адрес объекта\"], // Используем адрес как label\n      value: item[\"key0 Объекта\"]   // Используем key0 Объекта как value\n    };\n  })\n  .sort(function(a, b) {\n    // Сортируем по label (алфавитный порядок)\n    return a.label.localeCompare(b.label);\n  })\n}}",
+      "notation": "standard",
+      "originalId": "object_address_id",
+      "placeholderText": "Укажите адрес объекта",
+      "selectOptions": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( \n// Берем два столбца из исходных данных, удаляем дубликаты и сортируем по label\nlsfusion_obj.data\n  .filter(function(item, index, self) {\n    // Удаляем дубликаты на основе \"Адрес объекта\" и \"key0 Объекта\"\n    return (\n      index ===\n      self.findIndex(function(other) {\n        return other[\"Адрес объекта\"] === item[\"Адрес объекта\"] && other[\"key0 Объекта\"] === item[\"key0 Объекта\"];\n      })\n    );\n  })\n  .map(function(item) {\n    // Преобразуем данные в формат { label, value }\n    return {\n      label: item[\"Адрес объекта\"], // Используем адрес как label\n      value: item[\"key0 Объекта\"]   // Используем key0 Объекта как value\n    };\n  })\n  .sort(function(a, b) {\n    // Сортируем по label (алфавитный порядок)\n    return a.label.localeCompare(b.label);\n  })\n))}}",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "reasons_for_poor_condition": {
+      "alias": "reasons_for_poor_condition",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "text",
+      "computedValue": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"reasons_for_poor_condition\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "reasons_for_poor_condition",
+      "index": 3,
+      "isCellEditable": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "Причины, приведшие к закрытию пищеблоков",
+      "notation": "standard",
+      "originalId": "reasons_for_poor_condition",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "row_index": {
+      "alias": "row_index",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "text",
+      "computedValue": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_index\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "row_index",
+      "index": 22,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "row_index",
+      "notation": "standard",
+      "originalId": "row_index",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "row_num": {
+      "alias": "row_num",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "number",
+      "computedValue": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"row_num\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
+      "id": "row_num",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "№ п\\п",
+      "notation": "standard",
+      "originalId": "row_num",
+      "sticky": "left",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "total_food_blocks_in_poor_condition": {
+      "alias": "total_food_blocks_in_poor_condition",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
+      "columnType": "number",
+      "computedValue": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"total_food_blocks_in_poor_condition\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "RIGHT",
+      "id": "total_food_blocks_in_poor_condition",
+      "index": 1,
+      "isCellEditable": "{{table_appendix_4.processedTableData.map((currentRow, currentIndex) => ( \n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision')\n))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Кол-во пищеблоков в неудовл. сост-ии",
+      "notation": "standard",
+      "originalId": "total_food_blocks_in_poor_condition",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchKey": "",
+  "serverSidePaginationEnabled": true,
+  "showInlineEditingOptionDropdown": true,
+  "tableData": "{{form_4_sql_data.data}}",
+  "textSize": "0.875rem",
+  "topRow": 7,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "variant": "DEFAULT",
+  "version": 2,
+  "verticalAlignment": "CENTER",
+  "widgetId": "w6pz1lfzr9",
+  "widgetName": "table_appendix_4"
+}

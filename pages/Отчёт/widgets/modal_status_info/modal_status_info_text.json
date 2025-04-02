@@ -1,0 +1,55 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 22,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "k48wkoxb0j",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 39,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "originalBottomRow": 24,
+  "originalTopRow": 7,
+  "overflow": "NONE",
+  "parentColumnSpace": 6.9375,
+  "parentId": "qtgeyaok9k",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "shouldTruncate": false,
+  "text": "Статус <a> {{ getStatus.data[0].Статус }}</a> был присвоен отчёту пользователем <a> {{ getStatus.data[0].user_login }}</a> [{{ getStatus.data[0].user_group_print_name }}]\nВремя: {{ getStatus.data[0].created_date_time }}.\n\nПричина:\n<a>\n{{  getStatus.data[0].user_group_system_name === 'ou_employee'\n      ? '-'\n      : getStatus.data[0].comment || 'Нет комментария'\n  }}</a>",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 7,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "lcg7z4gcrc",
+  "widgetName": "modal_status_info_text"
+}

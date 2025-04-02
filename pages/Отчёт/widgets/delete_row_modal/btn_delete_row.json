@@ -1,0 +1,56 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 15,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "915g68qajl",
+  "leftColumn": 3,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{\n  appsmith.store.work_table === 'edu_object_state_appendix_1'\n    ? form_1_delete_trigger_row.run()\n        .then(() => {\n          form_1_sql_data.run();\n          closeModal(delete_row_modal.name);\n        })\n        .catch((error) => {\n          showAlert('Ошибка при удалении строки: ' + error.message);\n          closeModal(delete_row_modal.name);\n        })\n    : appsmith.store.work_table === 'edu_object_state_appendix_2'\n    ? form_2_delete_trigger_row.run()\n        .then(() => {\n          form_2_sql_data.run();\n          closeModal(delete_row_modal.name);\n        })\n        .catch((error) => {\n          showAlert('Ошибка при удалении строки: ' + error.message);\n          closeModal(delete_row_modal.name);\n        })\n    : appsmith.store.work_table === 'edu_object_state_appendix_3'\n    ? form_3_delete_trigger_row.run()\n        .then(() => {\n          form_3_sql_data.run();\n          closeModal(delete_row_modal.name);\n        })\n        .catch((error) => {\n          showAlert('Ошибка при удалении строки: ' + error.message);\n          closeModal(delete_row_modal.name);\n        })\n    : appsmith.store.work_table === 'edu_object_state_appendix_4'\n    ? form_4_delete_trigger_row.run()\n        .then(() => {\n          form_4_sql_data.run();\n          closeModal(delete_row_modal.name);\n        })\n        .catch((error) => {\n          showAlert('Ошибка при удалении строки: ' + error.message);\n          closeModal(delete_row_modal.name);\n        })\n    : appsmith.store.work_table === 'edu_object_state_appendix_5'\n    ? form_5_delete_trigger_row.run()\n        .then(() => {\n          form_5_sql_data.run();\n          closeModal(delete_row_modal.name);\n        })\n        .catch((error) => {\n          showAlert('Ошибка при удалении строки: ' + error.message);\n          closeModal(delete_row_modal.name);\n        })\n    : appsmith.store.work_table === 'edu_object_state_appendix_6'\n    ? form_6_delete_trigger_row.run()\n        .then(() => {\n          form_6_sql_data.run();\n          closeModal(delete_row_modal.name);\n        })\n        .catch((error) => {\n          showAlert('Ошибка при удалении строки: ' + error.message);\n          closeModal(delete_row_modal.name);\n        })\n    : (showAlert('Ошибка: некорректная таблица'), closeModal(delete_row_modal.name))\n}}",
+  "originalBottomRow": 15,
+  "originalTopRow": 11,
+  "parentId": "psl4a0brty",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 29,
+  "text": "Удалить строку",
+  "topRow": 11,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "dltsbfuauz",
+  "widgetName": "btn_delete_row"
+}

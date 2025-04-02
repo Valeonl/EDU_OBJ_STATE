@@ -1,0 +1,16 @@
+INSERT INTO appsmith.report_status_history (
+	session_id,
+	comment,
+	created_date,
+	directory_inn_id,
+	status_id,
+	report_id
+)
+VALUES (
+	{{ appsmith.store.user_session.user_session_id }}, -- ID сессии пользователя
+	'Направлен на проверку',            -- Комментарий
+	CURRENT_TIMESTAMP,              -- Текущая дата и время
+	{{ appsmith.store.user.ou_id }}, -- Значение FK ИНН (directory_inn_id)
+	2,                               -- FK Статус (фиксированное значение)
+	{{ appsmith.store.selected_report.report_id }} -- ID отчета из selected_report
+);

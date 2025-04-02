@@ -1,0 +1,25 @@
+UPDATE report_data.edu_object_state_appendix_2
+SET 
+    total_food_blocks = {{ table_appendix_2.updatedRow.total_food_blocks }},
+    compliance_status = {{ table_appendix_2.updatedRow.compliance_status ? table_appendix_2.updatedRow.compliance_status : null }},
+    non_compliance_details = '{{ table_appendix_2.updatedRow.non_compliance_details ? table_appendix_2.updatedRow.non_compliance_details : '' }}',
+    inspection_orders = {{ table_appendix_2.updatedRow.inspection_orders ? table_appendix_2.updatedRow.inspection_orders : null }},
+    units_needing_repair = {{ table_appendix_2.updatedRow.units_needing_repair }},
+    work_description = '{{ table_appendix_2.updatedRow.work_description ? table_appendix_2.updatedRow.work_description : '' }}',
+    object_address_id = {{ table_appendix_2.updatedRow.object_address_id }},
+    planned_year_of_implementation = {{ table_appendix_2.updatedRow.planned_year_of_implementation ? table_appendix_2.updatedRow.planned_year_of_implementation : null }},
+    allocated_funds_current_repair_2025 = {{ table_appendix_2.updatedRow.allocated_funds_current_repair_2025 }},
+    allocated_funds_current_repair_2026 = {{ table_appendix_2.updatedRow.allocated_funds_current_repair_2026 }},
+    allocated_funds_current_repair_2027 = {{ table_appendix_2.updatedRow.allocated_funds_current_repair_2027 }},
+    allocated_funds_capital_repair_2025 = {{ table_appendix_2.updatedRow.allocated_funds_capital_repair_2025 }},
+    allocated_funds_capital_repair_2026 = {{ table_appendix_2.updatedRow.allocated_funds_capital_repair_2026 }},
+    allocated_funds_capital_repair_2027 = {{ table_appendix_2.updatedRow.allocated_funds_capital_repair_2027 }},
+    additional_funds_current_repair_2025 = {{ table_appendix_2.updatedRow.additional_funds_current_repair_2025 }},
+    additional_funds_current_repair_2026 = {{ table_appendix_2.updatedRow.additional_funds_current_repair_2026 }},
+    additional_funds_current_repair_2027 = {{ table_appendix_2.updatedRow.additional_funds_current_repair_2027 }},
+    additional_funds_capital_repair_2025 = {{ table_appendix_2.updatedRow.additional_funds_capital_repair_2025 }},
+    additional_funds_capital_repair_2026 = {{ table_appendix_2.updatedRow.additional_funds_capital_repair_2026 }},
+    additional_funds_capital_repair_2027 = {{ table_appendix_2.updatedRow.additional_funds_capital_repair_2027 }}
+WHERE 
+    directory_inn_id = {{ appsmith.store.user.ou_id }}
+    AND row_index = {{ table_appendix_2.updatedRow.row_index }};

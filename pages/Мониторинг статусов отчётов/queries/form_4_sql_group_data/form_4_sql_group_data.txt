@@ -1,0 +1,44 @@
+SELECT 
+    ua.iogv,
+    ua.iogv_name,
+    ua.iogv_short_name,
+		form4."number",
+    years_of_use,
+    SUM(textbooks_written_off_2024) as textbooks_written_off_2024,
+    SUM(reason_number) as reason_number,
+		TRIM('; ' FROM NULLIF(STRING_AGG(DISTINCT CASE 
+    WHEN writeoff_reason_group = 'null' THEN '' 
+    WHEN writeoff_reason_group IS NULL THEN ''
+    ELSE writeoff_reason_group 
+    END, '; '), '')) as writeoff_reason,
+    SUM(total_writeoff_cost_thousands_rub) as total_writeoff_cost_thousands_rub
+FROM books_monitoring_app.form_4 form4
+LEFT JOIN access_control.user_auth ua
+ON form4.inn = ua.login::bigint
+WHERE iogv = {{appsmith.store.superuser.login}}::BIGINT 
+    AND ua.is_report_required_book = true 
+		{{ appsmith.store.download_type === 'gov' 
+? "AND ua.type_ou NOT IN ('ЧОУ', 'АНОО', 'АНПО')"
+: appsmith.store.download_type === 'private' 
+? "AND ua.type_ou IN ('ЧОУ', 'АНОО', 'АНПО')"
+: ""
+}}
+    AND ua.login::bigint IN (
+			SELECT DISTINCT rsh."FK ИНН"
+			FROM books_monitoring_app.report_status_history rsh
+			LEFT JOIN books_monitoring_app.report_status rs 
+			ON rsh."FK Статус" = rs.key0
+			WHERE rs.system_name NOT IN ('excluded')
+			AND rsh."Дата статуса" = (
+				SELECT MAX("Дата статуса")
+				FROM books_monitoring_app.report_status_history
+				WHERE "FK ИНН" = rsh."FK ИНН"
+			)
+		)
+GROUP BY 
+    ua.iogv,
+    ua.iogv_name,
+    ua.iogv_short_name,
+		form4."number",
+    years_of_use
+ORDER BY form4."number" 

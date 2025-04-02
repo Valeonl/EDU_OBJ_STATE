@@ -1,0 +1,7 @@
+SELECT 
+    *
+FROM 
+    appsmith.user_mat_view
+WHERE 
+    ou_id = '{{this.params.directory_inn_id}}'
+LIMIT 1;

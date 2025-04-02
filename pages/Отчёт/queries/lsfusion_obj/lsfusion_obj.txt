@@ -1,0 +1,4 @@
+SELECT * 
+FROM raw_data.lsfusion_obj
+WHERE 
+    directory_inn_inn::BIGINT = {{appsmith.store.user.ou_inn}}

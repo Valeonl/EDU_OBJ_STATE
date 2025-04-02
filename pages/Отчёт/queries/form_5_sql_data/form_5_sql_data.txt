@@ -1,0 +1,8 @@
+SELECT 
+    row_number() OVER (ORDER BY created_date) AS row_num,
+    *
+FROM 
+    report_data.edu_object_state_appendix_5
+WHERE 
+    directory_inn_id = {{appsmith.store.user.ou_id}}
+ORDER BY created_date;
