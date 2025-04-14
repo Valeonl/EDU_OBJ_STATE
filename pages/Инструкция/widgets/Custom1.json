@@ -1,0 +1,66 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 72,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "14ydgx4mb7",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 49,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 19,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 74,
+  "originalTopRow": 8,
+  "parentColumnSpace": 20.25,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "srcDoc": {
+    "css": "",
+    "html": "<!--ARCADE EMBED START--><div style=\"position: relative; padding-bottom: calc(47.447916666666664% + 41px); height: 0; width: 100%;\"><iframe src=\"https://demo.arcade.software/A2sz9Xs0jqxS15cJfpJk?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true\" title=\"Заполнение отчёта по надлежащему состоянию объектов\" frameborder=\"0\" loading=\"lazy\" webkitallowfullscreen mozallowfullscreen allowfullscreen allow=\"clipboard-write\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;\" ></iframe></div><!--ARCADE EMBED END-->",
+    "js": ""
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 6,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "",
+    "html": "<!--ARCADE EMBED START--><div style=\"position: relative; padding-bottom: calc(47.447916666666664% + 41px); height: 0; width: 100%;\"><iframe src=\"https://demo.arcade.software/A2sz9Xs0jqxS15cJfpJk?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true\" title=\"Заполнение отчёта по надлежащему состоянию объектов\" frameborder=\"0\" loading=\"lazy\" webkitallowfullscreen mozallowfullscreen allowfullscreen allow=\"clipboard-write\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;\" ></iframe></div><!--ARCADE EMBED END-->",
+    "js": ""
+  },
+  "version": 1,
+  "widgetId": "85c0n42uil",
+  "widgetName": "Custom1"
+}

@@ -40,6 +40,10 @@
     {
       "id": "Отчёт",
       "isDefault": false
+    },
+    {
+      "id": "Инструкция",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
