@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 72,
+  "bottomRow": 62,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
   "dynamicBindingPathList": [
@@ -31,7 +31,7 @@
   "isSearchWildcard": true,
   "isVisible": true,
   "key": "14ydgx4mb7",
-  "leftColumn": 2,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "mobileBottomRow": 49,
@@ -43,7 +43,7 @@
   "originalBottomRow": 74,
   "originalTopRow": 8,
   "parentColumnSpace": 20.25,
-  "parentId": "0",
+  "parentId": "wvxvjiaqk6",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 64,
@@ -53,7 +53,7 @@
     "js": ""
   },
   "theme": "{{appsmith.theme}}",
-  "topRow": 6,
+  "topRow": 4,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": "",
@@ -61,6 +61,6 @@
     "js": ""
   },
   "version": 1,
-  "widgetId": "85c0n42uil",
+  "widgetId": "ekeplxgnqf",
   "widgetName": "Custom1"
 }
