@@ -28,7 +28,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{monitoring_table_last.selectedRows.length > 0 ? false : true}}",
+  "isDisabled": "{{monitoring_table.selectedRows.length > 0 ? false : true}}",
   "isLoading": false,
   "isVisible": true,
   "key": "45v0eyuotk",

@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 49,
   "shouldTruncate": false,
-  "text": "Кол-во затрагиваемых ОУ: <a>{{monitoring_table_last.selectedRows.length}} </a>",
+  "text": "Кол-во затрагиваемых ОУ: <a>{{monitoring_table.selectedRows.length}} </a>",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 6,

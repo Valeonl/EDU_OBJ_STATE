@@ -73,7 +73,7 @@
     "allocated_funds_capital_repair_2025": 590,
     "allocated_funds_capital_repair_2026": 552,
     "allocated_funds_capital_repair_2027": 535,
-    "allocated_funds_current_repair_2025": 520,
+    "allocated_funds_current_repair_2025": 319,
     "allocated_funds_current_repair_2026": 537,
     "allocated_funds_current_repair_2027": 530,
     "class_spo": 96,
@@ -382,6 +382,9 @@
     },
     {
       "key": "primaryColumns.allocated_funds_capital_repair_2026.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2025.currencyCode"
     }
   ],
   "dynamicPropertyPathList": [
@@ -471,6 +474,9 @@
     },
     {
       "key": "primaryColumns.allocated_funds_capital_repair_2026.isCellEditable"
+    },
+    {
+      "key": "primaryColumns.allocated_funds_current_repair_2025.currencyCode"
     }
   ],
   "dynamicTriggerPathList": [
@@ -875,7 +881,7 @@
       "cellBackground": "{{\n  getStatus.data && getStatus.data[0] && \n  (getStatus.data[0]['status_system_name'] === 'in_work_ou' || \n   getStatus.data[0]['status_system_name'] === 'returned_for_revision') \n    ? 'white' \n    : 'gray'\n}}",
       "columnType": "currency",
       "computedValue": "{{table_appendix_1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"allocated_funds_current_repair_2025\"]))}}",
-      "currencyCode": "RUB",
+      "currencyCode": "{{(() => { const tableData = table_appendix_1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (null)) : null })()}}",
       "decimals": 1,
       "enableFilter": true,
       "enableSort": true,

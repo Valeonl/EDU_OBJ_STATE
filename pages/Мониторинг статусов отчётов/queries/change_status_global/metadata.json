@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO appsmith.report_status_history (\n\tdirectory_inn_id,\n\tstatus_id,\n\tcreated_date,\n\tsession_id,\n\tcomment,\n\treport_id\n)\nSELECT \n    di.directory_inn_id AS \"FK ИНН\", \n    s.status_id AS \"FK Статус\", \n    CURRENT_TIMESTAMP AS \"Дата статуса\",\n    {{ appsmith.store.user_session.user_session_id }} AS \"Session ID\",\n\t\t'{{this.params.comment}}',\n\t\t{{appsmith.store.selected_report.report_id}}\nFROM \n    appsmith.directory_inn di\nJOIN \n    appsmith.status s ON s.system_name = '{{ Select1.selectedOptionValue }}'\nWHERE \n    di.directory_inn_id = ANY(\n\t\t\tstring_to_array('{{ monitoring_table_last.selectedRows.map(row => row[\"directory_inn_id\"]).join(\",\") }}', ',')::bigint[]\n\t\t);",
+      "body": "INSERT INTO appsmith.report_status_history (\n\tdirectory_inn_id,\n\tstatus_id,\n\tcreated_date,\n\tsession_id,\n\tcomment,\n\treport_id\n)\nSELECT \n    di.directory_inn_id AS \"FK ИНН\", \n    s.status_id AS \"FK Статус\", \n    CURRENT_TIMESTAMP AS \"Дата статуса\",\n    {{ appsmith.store.user_session.user_session_id }} AS \"Session ID\",\n\t\t'{{this.params.comment}}',\n\t\t{{appsmith.store.selected_report.report_id}}\nFROM \n    appsmith.directory_inn di\nJOIN \n    appsmith.status s ON s.system_name = '{{ Select1.selectedOptionValue }}'\nWHERE \n    di.directory_inn_id = ANY(\n\t\t\tstring_to_array('{{ monitoring_table.selectedRows.map(row => row[\"directory_inn_id\"]).join(\",\") }}', ',')::bigint[]\n\t\t);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 14,
   "shouldTruncate": false,
-  "text": "Кол-во выделенных записей {{monitoring_table_last.selectedRows.length}}",
+  "text": "Кол-во выделенных записей {{monitoring_table.selectedRows.length}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 95,

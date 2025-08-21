@@ -19,5 +19,5 @@ JOIN
     appsmith.status s ON s.system_name = '{{ Select1.selectedOptionValue }}'
 WHERE 
     di.directory_inn_id = ANY(
-			string_to_array('{{ monitoring_table_last.selectedRows.map(row => row["directory_inn_id"]).join(",") }}', ',')::bigint[]
+			string_to_array('{{ monitoring_table.selectedRows.map(row => row["directory_inn_id"]).join(",") }}', ',')::bigint[]
 		);

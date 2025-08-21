@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 76,
+  "bottomRow": 83,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -27,8 +27,8 @@
   "mobileRightColumn": 36,
   "mobileTopRow": 61,
   "needsErrorInfo": false,
-  "originalBottomRow": 76,
-  "originalTopRow": 65,
+  "originalBottomRow": 83,
+  "originalTopRow": 72,
   "overflow": "NONE",
   "parentColumnSpace": 17.5,
   "parentId": "0",
@@ -40,7 +40,7 @@
   "text": "ГБОУ школа № 539: 7805149503\n\nАНОО \"ШКОЛА \"ИНДИВИДУАЛЬНЫЙ КЛУБ ИЗОБРЕТАТЕЛЬНЫХ ДЕТЕЙ\":  7811772480\n\nКировский район: 7805059546",
   "textAlign": "CENTER",
   "textColor": "#71717a",
-  "topRow": 65,
+  "topRow": 72,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
